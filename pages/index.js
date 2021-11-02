@@ -8,44 +8,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+<section className="left-bar">
+<span className="subtitle">Bradley Turek</span>
+        <span className="subliminal-messaging">(He's your guy)</span>
+      <nav>
+          <ul>
+          <a href="#"><li>Home</li></a>
+            <a href="#"><li>Brad the Husband &amp; Father</li></a>
+            <a href="#"><li>Brad the Software Developer</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </nav>
+        </section>
+
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Man of Many Hats
         </h1>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta ante justo, at efficitur enim efficitur ut. Fusce luctus turpis sapien, sit amet consequat nisi ultricies nec. Sed sed viverra sem. Nam tincidunt, sapien sed vulputate gravida, est velit faucibus sem, et suscipit sem massa et urna. Cras pharetra metus sit amet maximus mollis. Nulla sed sollicitudin velit, at bibendum mi. Integer et semper velit. Duis dignissim ante tortor, at luctus odio tristique vel. Pellentesque viverra nibh nec libero eleifend ultricies. Phasellus lobortis arcu et est eleifend faucibus. Phasellus nec gravida risus. Suspendisse justo leo, finibus vel maximus sed, dapibus ut metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquam semper dolor et feugiat. Sed tincidunt vehicula varius.
+        </p>
+        
       </main>
 
       <footer>
@@ -60,6 +48,7 @@ export default function Home() {
       </footer>
 
       <style jsx>{`
+     
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -67,15 +56,41 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          --nav-width: 230px;
         }
 
+        section.left-bar {
+          background-color: #335f70;
+          color: white;
+          position: fixed;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: var(--nav-width);
+          padding-top: 10px;
+          padding-left: 10px;
+        }
+
+        nav ul {
+          list-style-type:none;
+          padding-inline-start: 0px;
+          line-height: 2em;
+        }
+
+        nav > ul > li:hover {
+          color: black;
+          background-color: white;
+        }
+
+
         main {
-          padding: 5rem 0;
+          padding: 1rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin-left: var(--nav-width);
         }
 
         footer {
@@ -96,6 +111,18 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
+
+        .subtitle {
+          display: block;
+          font-size: 20pt;
+        }
+
+        .subliminal-messaging {
+          display: block;
+          font-size: 8pt;
+          line-height: 8pt;
+        }
+
 
         a {
           color: inherit;
