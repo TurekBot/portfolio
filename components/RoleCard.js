@@ -5,12 +5,11 @@ export default function RoleCard(props) {
     .replaceAll(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-");
 
   return (
-    <section className={"role " + roleClassName}>
+    <section className={"roleCard " + roleClassName}>
       <svg
-        width="5em"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 57 91"
-        id="avatar"
+        class="avatar"
       >
         <use href="/Man.svg#Man"></use>
       </svg>

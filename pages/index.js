@@ -16,11 +16,12 @@ export default function Home() {
 
       <main>
         <h1 className="title">Man of Many Hats</h1>
-
+        <section id="roleCards">
         <RoleCard roleName="Software Developer" />
         <RoleCard roleName="Visual Communicator" />
         <RoleCard roleName="UX Designer" />
         <RoleCard roleName="Technical Writer &amp; Editor" />
+        </section>
       </main>
 
       <Footer />
