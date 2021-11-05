@@ -16,10 +16,11 @@ export default function Home() {
       <main>
         <h1 className="title">Man of Many Hats</h1>
 
-        <section className="software-developer">
-          <svg id="avatar">
+        <section className="role software-developer">
+          <svg width="5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 57 91" id="avatar">
             <use href="/Man.svg#Man"></use>
           </svg>
+          Brad The Software Developer
         </section>
       </main>
 
