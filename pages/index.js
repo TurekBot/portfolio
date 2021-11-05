@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import FavIconThings from "../components/FavIconThings";
+import RoleCard from "../components/RoleCard";
 
 export default function Home() {
   return (
@@ -16,12 +17,10 @@ export default function Home() {
       <main>
         <h1 className="title">Man of Many Hats</h1>
 
-        <section className="role software-developer">
-          <svg width="5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 57 91" id="avatar">
-            <use href="/Man.svg#Man"></use>
-          </svg>
-          Brad The Software Developer
-        </section>
+        <RoleCard roleName="Software Developer" />
+        <RoleCard roleName="Visual Communicator" />
+        <RoleCard roleName="UX Designer" />
+        <RoleCard roleName="Technical Writer & Editor" />
       </main>
 
       <Footer />
