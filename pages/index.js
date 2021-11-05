@@ -20,7 +20,7 @@ export default function Home() {
         <RoleCard roleName="Software Developer" />
         <RoleCard roleName="Visual Communicator" />
         <RoleCard roleName="UX Designer" />
-        <RoleCard roleName="Technical Writer & Editor" />
+        <RoleCard roleName="Technical Writer &amp; Editor" />
       </main>
 
       <Footer />
