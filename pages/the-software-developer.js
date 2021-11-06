@@ -10,7 +10,7 @@ export default function TheSoftwareDeveloper() {
             <title>Brad the Software Developer</title>
             <FavIconThings/>
         </Head>
-        <RolePage pageTitle="Software Developer" accentColor="#2A9D8F"></RolePage>
+        <RolePage pageTitle="...the Software Developer" accentColor="#2A9D8F"></RolePage>
             <Navigation></Navigation>
         </>
     );
