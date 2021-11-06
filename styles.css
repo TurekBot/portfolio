@@ -152,9 +152,30 @@ section#roleCards {
     flex-direction: column;
     align-items: center;
     margin: 1em;
-    fill: var(--accent-color);
+    font-family: 'Roboto Slab', serif;
 }
 
 svg.avatar {
     width: 7em;
+    fill: var(--accent-color);
+}
+
+svg.role-icon {
+    width: 4em;
+}
+
+/*
+* This set of keyframes was adapted from the work of Brandon Gregory. https://css-tricks.com/making-css-animations-feel-natural/
+*/
+@keyframes hop {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-25px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+.roleCard:hover svg.avatar, .roleCard:hover svg.role-icon {
+    animation: hop .75s none;
+    animation-timing-function: ease;
 }
