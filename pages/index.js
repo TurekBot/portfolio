@@ -10,6 +10,12 @@ export default function Home() {
       <Head>
         <title>Bradley Turek's Portfolio</title>
         <FavIconThings />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <Navigation />
@@ -17,10 +23,10 @@ export default function Home() {
       <main>
         <h1 className="title">Man of Many Hats</h1>
         <section id="roleCards">
-        <RoleCard roleName="Software Developer" />
-        <RoleCard roleName="Visual Communicator" />
-        <RoleCard roleName="UX Designer" />
-        <RoleCard roleName="Technical Writer &amp; Editor" />
+          <RoleCard roleName="Software Developer" />
+          <RoleCard roleName="Visual Communicator" />
+          <RoleCard roleName="UX Designer" />
+          <RoleCard roleName="Technical Writer &amp; Editor" />
         </section>
       </main>
 
