@@ -11,14 +11,14 @@ export default function RoleCard(props) {
           <svg
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 57 91"
-            class="avatar"
+            className="avatar"
           >
             <use href="/Man.svg#Man"></use>
           </svg>
           <svg
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 32 32"
-            class="role-icon"
+            className="role-icon"
           >
             <use href={"/role-icons.svg#" + roleClassName}></use>
           </svg>
