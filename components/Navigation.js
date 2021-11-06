@@ -4,7 +4,7 @@ export default function Navigation() {
     return (
       <section className="left-bar">
         <span className="subtitle">Bradley Turek</span>
-        <span className="subliminal-messaging">(He's your guy)</span>
+        {/* <span className="subliminal-messaging">(He's your guy)</span> */}
         <nav>
           <ul>
           <li><a href="/">Home</a></li>
