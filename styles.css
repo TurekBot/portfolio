@@ -12,26 +12,31 @@ html, body {
     --nav-width: 230px;
     /* Color Palette from Coolors.co: https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51 */
     --charcoal: hsla(197, 37%, 24%, 1);
-    --persian-green: hsla(173, 58%, 39%, 1);
-    --orange-yellow-crayola: hsla(43, 74%, 66%, 1);
-    --sandy-brown: hsla(27, 87%, 67%, 1);
-    --burnt-sienna: hsla(12, 76%, 61%, 1);
+    --viridian-green: hsla(180, 66%, 38%, 1);
+    --flame: hsla(16, 100%, 45%, 1);
+    --middle-yellow: hsla(55, 100%, 50%, 1);
+    --carnation-pink: hsla(336, 84%, 80%, 1)
 }
 
 .software-developer {
-    --accent-color: var(--persian-green);
+    --accent-color: var(--viridian-green);
 }
 
 .visual-communicator {
-    --accent-color: var(--orange-yellow-crayola);
+    --accent-color: var(--flame);
 }
 
 .ux-designer {
-    --accent-color: var(--sandy-brown);
+    --accent-color: var(--middle-yellow);
 }
 
 .technical-writer-editor {
-    --accent-color: var(--burnt-sienna);
+    --accent-color: var(--carnation-pink);
+}
+
+::selection {
+    background-color: var(--charcoal);
+    color: white;
 }
 
 h1 {
@@ -67,9 +72,8 @@ nav ul {
 
 nav>ul>li>a:hover {
     color: black;
-    background-color:var(--accent-color, white);
+    background-color: var(--accent-color, white);
 }
-
 
 nav>ul>li>a {
     display: inline-block;
@@ -91,8 +95,6 @@ header {
     padding: 0 1rem;
     background-color: var(--accent-color);
 }
-
-
 
 .subtitle {
     display: block;
@@ -144,8 +146,14 @@ section#roleCards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
     font-family: 'Roboto Slab', serif;
+    border-radius: 4%;
+    padding: 1em;
+    transition: background-color .2s;
+}
+
+.roleCard:active {
+    background-color: var(--accent-color);
 }
 
 svg.avatar {
@@ -160,12 +168,23 @@ svg.role-icon {
 /*
 * This set of keyframes was adapted from the work of Brandon Gregory. https://css-tricks.com/making-css-animations-feel-natural/
 */
+
 @keyframes hop {
-    0%   { transform: scale(1,1)    translateY(0); }
-    10%  { transform: scale(1.1,.9) translateY(0); }
-    30%  { transform: scale(.9,1.1) translateY(-25px); }
-    50%  { transform: scale(1,1)    translateY(0); }
-    100% { transform: scale(1,1)    translateY(0); }
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+    30% {
+        transform: scale(.9, 1.1) translateY(-25px);
+    }
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
 }
 
 .roleCard:hover svg.avatar, .roleCard:hover svg.role-icon {
