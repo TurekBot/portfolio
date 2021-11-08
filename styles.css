@@ -34,6 +34,10 @@ html, body {
     --accent-color: var(--burnt-sienna);
 }
 
+h1 {
+    font-family: 'Roboto Slab';
+}
+
 .container {
     min-height: 100vh;
     padding: 0 0.5rem;
