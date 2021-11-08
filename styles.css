@@ -65,10 +65,11 @@ nav ul {
     padding-inline-start: 0px;
 }
 
-nav>ul>li:hover {
+nav>ul>li>a:hover {
     color: black;
-    background-color: white;
+    background-color:var(--accent-color, white);
 }
+
 
 nav>ul>li>a {
     display: inline-block;
