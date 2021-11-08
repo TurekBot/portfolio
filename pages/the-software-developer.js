@@ -16,7 +16,7 @@ export default function TheSoftwareDeveloper() {
         pageTitle="Software Developer"
         intro={
           <>
-            Anybody can write software. I want to write <em>good</em> software.
+            Anybody can write software—not everyone can write software for <em>humans</em>. 
           </>
         }
       ></RolePage>
