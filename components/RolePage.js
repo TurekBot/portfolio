@@ -1,5 +1,4 @@
 import { convertRoleNametoClassName } from "./RoleCard";
-import Image from "next/image";
 import ArtifactCard from "./ArtifactCard";
 
 export default function RolePage(props) {
