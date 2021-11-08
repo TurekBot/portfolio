@@ -37,7 +37,7 @@ html, body {
 ::selection {
     background-color: var(--charcoal);
     color: white;
-  }
+}
 
 h1 {
     font-family: 'Roboto Slab';
@@ -146,8 +146,14 @@ section#roleCards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
     font-family: 'Roboto Slab', serif;
+    border-radius: 4%;
+    padding: 1em;
+    transition: background-color .2s;
+}
+
+.roleCard:active {
+    background-color: var(--accent-color);
 }
 
 svg.avatar {
