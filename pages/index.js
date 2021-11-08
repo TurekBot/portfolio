@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
-import FavIconThings from "../components/FavIconThings";
+import HeadStuff from "../components/HeadStuff";
 import RoleCard from "../components/RoleCard";
 
 export default function Home() {
@@ -9,13 +9,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Bradley Turek's Portfolio</title>
-        <FavIconThings />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
-          rel="stylesheet"
-        />
+        <HeadStuff />
       </Head>
 
       <Navigation />

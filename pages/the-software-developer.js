@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import FavIconThings from '../components/FavIconThings';
+import HeadStuff from '../components/HeadStuff';
 import Navigation from '../components/Navigation';
 import RolePage from '../components/RolePage';
 
@@ -8,9 +8,9 @@ export default function TheSoftwareDeveloper() {
         <>
         <Head>
             <title>Brad the Software Developer</title>
-            <FavIconThings/>
+            <HeadStuff/>
         </Head>
-        <RolePage pageTitle="...the Software Developer" accentColor="#2A9D8F"></RolePage>
+        <RolePage pageTitle="Software Developer" accentColor="#2A9D8F"></RolePage>
             <Navigation></Navigation>
         </>
     );
