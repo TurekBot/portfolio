@@ -1,4 +1,6 @@
 import { convertRoleNametoClassName } from "./RoleCard";
+import Image from "next/image";
+import ArtifactCard from "./ArtifactCard";
 
 export default function RolePage(props) {
   const roleClassName = convertRoleNametoClassName(props.pageTitle);
@@ -7,14 +9,24 @@ export default function RolePage(props) {
     <main className={roleClassName}>
       <header>
         <h1>Brad the {props.pageTitle}</h1>
-        <p>{props.intro}</p>
+        <p className="intro">{props.intro}</p>
       </header>
+      <section className="artifacts">
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+      </section>
 
       <style jsx>{`
-        h1 {
-          text-align: center;
-        }
-        `}</style>
+      .intro {
+        text-align: center;
+      }
+      `}</style>
     </main>
   );
 }

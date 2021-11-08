@@ -94,6 +94,7 @@ main {
 header {
     padding: 0 1rem;
     background-color: var(--accent-color);
+    width: 100%;
 }
 
 .subtitle {
@@ -190,4 +191,12 @@ svg.role-icon {
 .roleCard:hover svg.avatar, .roleCard:hover svg.role-icon {
     animation: hop .75s none;
     animation-timing-function: ease;
+}
+
+.artifacts {
+    width: 100%;
+    display: grid;
+    /* gap: 3em; */
+    grid-template-columns: 2fr 2fr 2fr;
+    margin-top: 2em;
 }
