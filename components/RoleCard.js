@@ -1,8 +1,5 @@
 export default function RoleCard(props) {
-  const roleClassName = props.roleName
-    .toLowerCase()
-    // Replace all non CSS identifier characters (like spaces or special characters) with a hyphen.
-    .replaceAll(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-");
+  const roleClassName = convertRoleNametoClassName(props.roleName);
 
   return (
     <a href={"/the-" + roleClassName}>
@@ -23,8 +20,15 @@ export default function RoleCard(props) {
             <use href={"/role-icons.svg#" + roleClassName}></use>
           </svg>
         </div>
-        Brad The {props.roleName}
+        Brad the {props.roleName}
       </section>
     </a>
   );
+}
+
+export function convertRoleNametoClassName(roleName) {
+  return roleName
+    .toLowerCase()
+    // Replace all non CSS identifier characters (like spaces or special characters) with a hyphen.
+    .replaceAll(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-");
 }
