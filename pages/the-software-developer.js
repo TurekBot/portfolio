@@ -14,9 +14,13 @@ export default function TheSoftwareDeveloper() {
       <Navigation />
       <RolePage
         pageTitle="Software Developer"
-        intro="Sed ac enim mollis, vulputate turpis sit amet, sollicitudin eros. Cras justo nunc, consequat sed imperdiet vel, molestie ut ex. Aenean sit amet mi id arcu varius elementum. Quisque dignissim purus quis erat lacinia, et vulputate quam tempor. Duis consectetur quam sed quam hendrerit egestas. Aliquam dictum urna fringilla arcu mattis rhoncus."
+        intro={
+          <>
+            Anybody can write software. I want to write <em>good</em> software.
+          </>
+        }
       ></RolePage>
-      <Footer/>
+      <Footer />
     </>
   );
 }
