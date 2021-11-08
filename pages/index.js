@@ -11,7 +11,7 @@ export default function Home() {
         <title>Bradley Turek's Portfolio</title>
         <FavIconThings />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
           rel="stylesheet"
