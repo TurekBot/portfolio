@@ -48,7 +48,7 @@ h1 {
 }
 
 section.left-bar {
-    background-color: #335f70;
+    background-color: var(--charcoal);
     color: white;
     position: fixed;
     top: 0;
