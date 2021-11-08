@@ -15,8 +15,10 @@ export default function Home() {
       <Navigation />
 
       <main>
-        <h1 className="title">Bradley Turek</h1>
-        <p>I don't mean to toot my own 📯... but I can do a thing or two.</p>
+        <header>
+          <h1 className="title">Bradley Turek</h1>
+          <p>I don't mean to toot my own 📯... but I can do a thing or two.</p>
+        </header>
         <section id="roleCards">
           <RoleCard roleName="Software Developer" />
           <RoleCard roleName="Visual Communicator" />
