@@ -3,7 +3,7 @@
 export default function Navigation() {
     return (
       <section className="left-bar">
-        <a href="/"><span className="subtitle">Bradley Turek</span></a>
+        <a href="/"><span className="subtitle">Brad Turek</span></a>
         {/* <span className="subliminal-messaging">(He's your guy)</span> */}
         <nav>
           <ul>

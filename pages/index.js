@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Bradley Turek's Portfolio</title>
+        <title>Brad Turek's Portfolio</title>
         <HeadStuff />
       </Head>
 
@@ -16,7 +16,7 @@ export default function Home() {
 
       <main>
         <header>
-          <h1 className="title">Bradley Turek</h1>
+          <h1 className="title">Brad Turek</h1>
           <p>I don't mean to toot my own 📯... but I can do a thing or two.</p>
         </header>
         <section id="roleCards">

@@ -36,6 +36,7 @@ html, body {
 
 h1 {
     font-family: 'Roboto Slab';
+    text-align: center;
 }
 
 .container {

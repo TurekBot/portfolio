@@ -9,4 +9,4 @@
 ## Going Live
 To make the webpage public simply
 1. Run `npm run build` to build out a production-ready version of the project; it will put the static HTML files in the `\out` directory.
-2. Go to the `/out` folder and run `surge . bradleyturek.surge.sh` which will deploy those files to http://bradleyturek.surge.sh
+2. Go to the `/out` folder and run `surge . BradTurek.surge.sh` which will deploy those files to http://Bradturek.surge.sh
