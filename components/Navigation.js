@@ -8,10 +8,10 @@ export default function Navigation() {
         <nav>
           <ul>
           {/* <li><a href="/">Home</a></li> */}
-          <li><a href="the-software-developer">...the Software Developer</a></li>
-          <li><a href="the-visual-communicator">...the Visual Communicator</a></li>
-          <li><a href="the-ux-designer">...the UX Designer</a></li>
-          <li><a href="the-technical-writer-editor">...the Technical Writer & Editor</a></li>
+          <li><a href="the-software-developer">Software Developer</a></li>
+          <li><a href="the-visual-communicator">Visual Communicator</a></li>
+          <li><a href="the-ux-designer">UX Designer</a></li>
+          <li><a href="the-technical-writer-editor">Technical Writer & Editor</a></li>
           <li><a href="#">Contact</a></li>
           </ul>
         </nav>
