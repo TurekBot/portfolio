@@ -76,16 +76,18 @@ export default function ArtifactCard(props) {
     </svg>
   );
 
+  const title = props.artifactTitle ? props.artifactTitle : "Artifact Title";
+  const hook = props.hook
+    ? props.hook
+    : "Duis consectetur quam sed quam hendrerit egestas. Aliquam dictum urna fringilla arcu mattis rhoncus.";
+    
   return (
     <a href="#">
       <figure>
-        {placeholder}
+        {props.thumbnail ? <img src={props.thumbnail} /> : placeholder}
         <figcaption>
-          <h1>Artifact Title</h1>
-          <p>
-            Duis consectetur quam sed quam hendrerit egestas. Aliquam dictum
-            urna fringilla arcu mattis rhoncus.
-          </p>
+          <h1>{title}</h1>
+          <p>{hook}</p>
         </figcaption>
         <style jsx>{`
           figure {

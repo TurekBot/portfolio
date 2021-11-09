@@ -11,7 +11,7 @@ export default function RolePage(props) {
         <p className="intro">{props.intro}</p>
       </header>
       <section className="artifacts">
-        <ArtifactCard />
+        <ArtifactCard thumbnail="/images/AutoDash.gif" artifactTitle="AutoDash" hook={<span>Em dashes should be easy to type—but they’re not. AutoDash fixes that.</span>} />
         <ArtifactCard />
         <ArtifactCard />
         <ArtifactCard />
