@@ -4,6 +4,18 @@ import ArtifactCard from "./ArtifactCard";
 export default function RolePage(props) {
   const roleClassName = convertRoleNametoClassName(props.pageTitle);
 
+  const placeholderCards = (
+    <>
+      <ArtifactCard />
+      <ArtifactCard />
+      <ArtifactCard />
+      <ArtifactCard />
+      <ArtifactCard />
+      <ArtifactCard />
+      <ArtifactCard />
+    </>
+  );
+
   return (
     <main className={roleClassName}>
       <header>
@@ -11,20 +23,13 @@ export default function RolePage(props) {
         <p className="intro">{props.intro}</p>
       </header>
       <section className="artifacts">
-        <ArtifactCard thumbnail="/images/AutoDash.gif" artifactTitle="AutoDash" hook={<span>Em dashes should be easy to type—but they’re not. AutoDash fixes that.</span>} />
-        <ArtifactCard />
-        <ArtifactCard />
-        <ArtifactCard />
-        <ArtifactCard />
-        <ArtifactCard />
-        <ArtifactCard />
-        <ArtifactCard />
+        {props.children ? props.children : placeholderCards}
       </section>
 
       <style jsx>{`
-      .intro {
-        text-align: center;
-      }
+        .intro {
+          text-align: center;
+        }
       `}</style>
     </main>
   );
