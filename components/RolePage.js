@@ -28,7 +28,7 @@ export default function RolePage(props) {
       <Navigation />
       <main className={roleClassName}>
         <header>
-          <h1>Brad the {props.pageTitle}</h1>
+          <h1>{props.pageTitle}</h1>
           <p className="intro">{props.intro}</p>
         </header>
         <section className="artifacts">
