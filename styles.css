@@ -116,7 +116,6 @@ a {
     text-decoration: none;
 }
 
-
 .title {
     margin: 0;
     line-height: 1.15;
@@ -197,7 +196,11 @@ svg.role-icon {
     margin-top: 2em;
 }
 
-.artifact-description a{
+.artifact-description {
+    display: flex;
+}
+
+.artifact-description a {
     text-decoration: underline;
 }
 
@@ -209,12 +212,15 @@ svg.role-icon {
 .skills-n-technologies {
     background-color: var(--accent-color);
     filter: brightness(140%);
-    
     flex: 1;
     padding: 0 2em;
-    
 }
-.skills-n-technologies ul {
+
+.skills-n-technologies > h3 {
+    margin-block-end: 0.25em;
+}
+.skills-n-technologies > ul {
+    margin-block-start: 0.25em;
     list-style-type: square;
     padding-left: 1.5em;
     line-height: 1.5em;

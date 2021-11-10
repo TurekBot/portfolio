@@ -2,7 +2,7 @@ export default function AutoDash() {
   return (
     <>
       <section>
-      <h1>AutoDash</h1>
+      <h2>AutoDash</h2>
       <p>
         Just type “ - ” (space, hyphen, space) and shazam: “ — ” an automatic em
         dash.
@@ -27,7 +27,7 @@ export default function AutoDash() {
       </p>
       </section>
       <aside className="skills-n-technologies">
-          <h2>Skills & Technologies</h2>
+          <h3>Skills & Technologies</h3>
           <ul>
               <li>Pattern Matching</li>
               <li>AutoHotkey</li>
