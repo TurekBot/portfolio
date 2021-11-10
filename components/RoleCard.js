@@ -30,5 +30,5 @@ export function convertRoleNametoClassName(roleName) {
   return roleName
     .toLowerCase()
     // Replace all non CSS identifier characters (like spaces or special characters) with a hyphen.
-    .replaceAll(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-");
+    .replace(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-");
 }
