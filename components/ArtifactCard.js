@@ -1,3 +1,6 @@
+import { convertRoleNameToPageName } from "./RoleCard";
+
+
 export default function ArtifactCard(props) {
   const placeholder = (
     <svg
@@ -80,9 +83,11 @@ export default function ArtifactCard(props) {
   const hook = props.hook
     ? props.hook
     : "Duis consectetur quam sed quam hendrerit egestas. Aliquam dictum urna fringilla arcu mattis rhoncus.";
-    
+
+  const linkHref = convertRoleNameToPageName(props.parent) + "/" + props.id;
+
   return (
-    <a href="#">
+    <a href={props.id && props.parent ? linkHref : "#"}>
       <figure>
         {props.thumbnail ? <img src={props.thumbnail} /> : placeholder}
         <figcaption>

@@ -32,3 +32,8 @@ export function convertRoleNameToClassName(roleName) {
     // Replace all non CSS identifier characters (like spaces or special characters) with a hyphen.
     .replace(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-");
 }
+
+export function convertRoleNameToPageName(roleName) {
+  return "the-"+convertRoleNameToClassName(roleName);
+
+}

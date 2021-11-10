@@ -20,8 +20,6 @@ export default function RolePage(props) {
     </>
   );
 
-  console.log(props.children);
-
   return (
     <>
       <Head>
