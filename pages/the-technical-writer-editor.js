@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ArtifactCard from "../components/ArtifactCard";
 import Footer from "../components/Footer";
 import HeadStuff from "../components/HeadStuff";
 import Navigation from "../components/Navigation";
@@ -15,8 +16,16 @@ export default function TheUxDesigner() {
       <RolePage
         pageTitle="Technical Writer &amp; Editor"
         intro="Sed ac enim mollis, vulputate turpis sit amet, sollicitudin eros. Cras justo nunc, consequat sed imperdiet vel, molestie ut ex. Aenean sit amet mi id arcu varius elementum. Quisque dignissim purus quis erat lacinia, et vulputate quam tempor. Duis consectetur quam sed quam hendrerit egestas. Aliquam dictum urna fringilla arcu mattis rhoncus."
-      ></RolePage>
-      <Footer/>
+      >
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+        <ArtifactCard />
+      </RolePage>
+      <Footer />
     </>
   );
 }

@@ -8,18 +8,17 @@ import Navigation from "./Navigation";
 export default function RolePage(props) {
   const roleClassName = convertRoleNameToClassName(props.pageTitle);
 
-  const placeholderCards = (
-    <>
-      <ArtifactCard />
-      <ArtifactCard />
-      <ArtifactCard />
-      <ArtifactCard />
-      <ArtifactCard />
-      <ArtifactCard />
-      <ArtifactCard />
-    </>
-  );
+  console.log(props.artifacts);
 
+  console.log("received slug:");
+  console.log(props.selectedArtifact);
+
+  const theSelectedArtifact = props.artifacts.get(props.selectedArtifact);
+
+  console.log("selected artifact:");
+  console.log(theSelectedArtifact);
+
+  
   return (
     <>
       <Head>
@@ -33,7 +32,7 @@ export default function RolePage(props) {
           <p className="intro">{props.intro}</p>
         </header>
         <section className="artifacts">
-          {props.children ? props.children : placeholderCards}
+          {props.selectedArtifact ? theSelectedArtifact : props.children}
         </section>
       </main>
       <Footer />

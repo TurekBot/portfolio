@@ -5,8 +5,13 @@ import AutoDash from "../../components/software-developer-artifacts/AutoDash";
 
 export default function TheSoftwareDeveloper() {
   const router = useRouter();
-  const { artifact } = router.query;
+  const { artifactPaths } = router.query;
   const roleName = "Software Developer"
+
+  const artifacts = new Map([["auto-dash", <AutoDash/>]]);
+
+  // We only care about
+  const selectedArtifact = (artifactPaths) ? artifactPaths[0] : null; 
 
   return (
     <>
@@ -18,11 +23,8 @@ export default function TheSoftwareDeveloper() {
             <em>humans</em>.
           </>
         }
-        artifacts={
-          <>
-            <AutoDash id="auto-dash" />
-          </>
-        }
+        artifacts={artifacts}
+        selectedArtifact={selectedArtifact}
       >
         <ArtifactCard
           parent={roleName}
