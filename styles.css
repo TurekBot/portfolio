@@ -40,7 +40,7 @@ html, body {
 }
 
 h1 {
-    font-family: 'Roboto Slab';
+    font-family: 'Zen Antique Soft', serif;
     text-align: center;
 }
 
@@ -101,7 +101,7 @@ header {
     display: block;
     font-size: 20pt;
     padding-left: 10px;
-    font-family: 'Roboto Slab';
+    font-family: 'Zen Antique Soft', serif;
 }
 
 .subliminal-messaging {
@@ -125,7 +125,7 @@ a {
     margin: 0;
     line-height: 1.15;
     font-size: 4rem;
-    font-family: 'Roboto Slab';
+
 }
 
 code {
@@ -147,7 +147,7 @@ section#roleCards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto Slab', serif; */
     border-radius: 4%;
     padding: 1em;
     transition: background-color .2s;
