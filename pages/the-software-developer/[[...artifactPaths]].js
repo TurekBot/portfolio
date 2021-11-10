@@ -2,6 +2,7 @@ import RolePage from "../../components/RolePage";
 import ArtifactCard from "../../components/ArtifactCard";
 import { useRouter } from "next/dist/client/router";
 import AutoDash from "../../components/software-developer-artifacts/AutoDash";
+import PlaceholderArtifactCard from "../../components/PlaceholderArtifactCard";
 
 export default function TheSoftwareDeveloper() {
   const router = useRouter();
@@ -38,6 +39,7 @@ export default function TheSoftwareDeveloper() {
             </span>
           }
         />
+        <PlaceholderArtifactCard />
       </RolePage>
     </>
   );

@@ -27,13 +27,19 @@ export default function RoleCard(props) {
 }
 
 export function convertRoleNameToClassName(roleName) {
-  return roleName
-    .toLowerCase()
-    // Replace all non CSS identifier characters (like spaces or special characters) with a hyphen.
-    .replace(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-");
+
+  if (roleName === undefined) {
+    return undefined;
+  }
+
+  return (
+    roleName
+      .toLowerCase()
+      // Replace all non CSS identifier characters (like spaces or special characters) with a hyphen.
+      .replace(/[^_a-zA-Z]+[^_a-zA-Z0-9-]*/g, "-")
+  );
 }
 
 export function convertRoleNameToPageName(roleName) {
-  return "the-"+convertRoleNameToClassName(roleName);
-
+  return "the-" + convertRoleNameToClassName(roleName);
 }
