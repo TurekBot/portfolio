@@ -8,5 +8,5 @@
 
 ## Going Live
 To make the webpage public simply
-1. Run `npm run build` to build out a production-ready version of the project; it will put the static HTML files in the `\out` directory.
-2. Go to the `/out` folder and run `surge . BradTurek.surge.sh` which will deploy those files to http://Bradturek.surge.sh
+1. Push your changes to the `main` branch on GitHub. Vercel will automatically pick them up, build the site and deploy it.
+2. See https://vercel.com/turekbot/portfolio
