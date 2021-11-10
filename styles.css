@@ -4,6 +4,45 @@ html, body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+/* ---------------------------------------------------------------------------- 
+ Sticky Footer Stuff
+   This sticky footer technique (that I ended up having to apply to the __next element as well)
+   is the handy work fo Ben Frain, from his book Responsive Web Design with HTML5 and CSS (Near the end of Chapter 4).
+   It lets the first and main item grow to fill all the space that's not taken up by the rest. */
+
+html {
+    height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+#__next {
+    display: flex;
+    flex-grow: 1;
+    /* Lets it grow to fill the remaining space */
+    flex-basis: auto;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    /* Lets it grow to fill the remaining space */
+    flex-basis: auto;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+main {
+    /* align-items: center; */
+    margin-left: var(--nav-width);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -80,15 +119,6 @@ nav>ul>li>a {
     width: 100%;
     padding: 0.5em 0em;
     padding-left: 10px;
-}
-
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: var(--nav-width);
 }
 
 header {
@@ -216,10 +246,11 @@ svg.role-icon {
     padding: 0 2em;
 }
 
-.skills-n-technologies > h3 {
+.skills-n-technologies>h3 {
     margin-block-end: 0.25em;
 }
-.skills-n-technologies > ul {
+
+.skills-n-technologies>ul {
     margin-block-start: 0.25em;
     list-style-type: square;
     padding-left: 1.5em;
