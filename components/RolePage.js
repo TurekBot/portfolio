@@ -1,4 +1,4 @@
-import { convertRoleNametoClassName } from "./RoleCard";
+import { convertRoleNameToClassName } from "./RoleCard";
 import ArtifactCard from "./ArtifactCard";
 import HeadStuff from "./HeadStuff";
 import Head from "next/head";
@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 
 export default function RolePage(props) {
-  const roleClassName = convertRoleNametoClassName(props.pageTitle);
+  const roleClassName = convertRoleNameToClassName(props.pageTitle);
 
   const placeholderCards = (
     <>
@@ -19,6 +19,8 @@ export default function RolePage(props) {
       <ArtifactCard />
     </>
   );
+
+  console.log(props.children);
 
   return (
     <>

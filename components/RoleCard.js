@@ -1,5 +1,5 @@
 export default function RoleCard(props) {
-  const roleClassName = convertRoleNametoClassName(props.roleName);
+  const roleClassName = convertRoleNameToClassName(props.roleName);
 
   return (
     <a href={"/the-" + roleClassName}>
@@ -26,7 +26,7 @@ export default function RoleCard(props) {
   );
 }
 
-export function convertRoleNametoClassName(roleName) {
+export function convertRoleNameToClassName(roleName) {
   return roleName
     .toLowerCase()
     // Replace all non CSS identifier characters (like spaces or special characters) with a hyphen.

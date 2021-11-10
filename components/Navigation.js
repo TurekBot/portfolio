@@ -1,4 +1,4 @@
-import { convertRoleNametoClassName } from "./RoleCard";
+import { convertRoleNameToClassName } from "./RoleCard";
 
 export default function Navigation() {
   return (
@@ -13,7 +13,7 @@ export default function Navigation() {
           <li>
             <a
               href="/the-software-developer"
-              className={convertRoleNametoClassName("Software Developer")}
+              className={convertRoleNameToClassName("Software Developer")}
             >
               Software Developer
             </a>
@@ -21,7 +21,7 @@ export default function Navigation() {
           <li>
             <a
               href="/the-visual-communicator"
-              className={convertRoleNametoClassName("Visual Communicator")}
+              className={convertRoleNameToClassName("Visual Communicator")}
             >
               Visual Communicator
             </a>
@@ -29,7 +29,7 @@ export default function Navigation() {
           <li>
             <a
               href="/the-ux-designer"
-              className={convertRoleNametoClassName("UX Designer")}
+              className={convertRoleNameToClassName("UX Designer")}
             >
               UX Designer
             </a>
@@ -37,7 +37,7 @@ export default function Navigation() {
           <li>
             <a
               href="/the-technical-writer-editor"
-              className={convertRoleNametoClassName(
+              className={convertRoleNameToClassName(
                 "Technical Writer & Editor"
               )}
             >
