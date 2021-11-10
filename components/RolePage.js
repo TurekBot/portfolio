@@ -31,7 +31,7 @@ export default function RolePage(props) {
           <h1>Brad the {props.pageTitle}</h1>
           <p className="intro">{props.intro}</p>
         </header>
-        <section className="artifacts">
+        <section className={props.selectedArtifact ? "artifact-description" : "artifact-cards"}>
           {props.selectedArtifact ? theSelectedArtifact : props.children}
         </section>
       </main>

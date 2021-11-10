@@ -116,10 +116,6 @@ a {
     text-decoration: none;
 }
 
-.title a {
-    color: #0070f3;
-    text-decoration: none;
-}
 
 .title {
     margin: 0;
@@ -193,10 +189,14 @@ svg.role-icon {
     animation-timing-function: ease;
 }
 
-.artifacts {
+.artifact-cards {
     width: 100%;
     display: grid;
     /* gap: 3em; */
     grid-template-columns: 2fr 2fr 2fr;
     margin-top: 2em;
+}
+
+.artifact-description a{
+    text-decoration: underline;
 }
