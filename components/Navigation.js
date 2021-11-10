@@ -12,7 +12,7 @@ export default function Navigation() {
           {/* <li><a href="/">Home</a></li> */}
           <li>
             <a
-              href="the-software-developer"
+              href="/the-software-developer"
               className={convertRoleNametoClassName("Software Developer")}
             >
               Software Developer
@@ -20,7 +20,7 @@ export default function Navigation() {
           </li>
           <li>
             <a
-              href="the-visual-communicator"
+              href="/the-visual-communicator"
               className={convertRoleNametoClassName("Visual Communicator")}
             >
               Visual Communicator
@@ -28,7 +28,7 @@ export default function Navigation() {
           </li>
           <li>
             <a
-              href="the-ux-designer"
+              href="/the-ux-designer"
               className={convertRoleNametoClassName("UX Designer")}
             >
               UX Designer
@@ -36,7 +36,7 @@ export default function Navigation() {
           </li>
           <li>
             <a
-              href="the-technical-writer-editor"
+              href="/the-technical-writer-editor"
               className={convertRoleNametoClassName(
                 "Technical Writer & Editor"
               )}
