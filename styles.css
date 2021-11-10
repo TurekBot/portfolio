@@ -200,3 +200,22 @@ svg.role-icon {
 .artifact-description a{
     text-decoration: underline;
 }
+
+.artifact-description section {
+    flex: 2;
+    padding: 0 2em;
+}
+
+.skills-n-technologies {
+    background-color: var(--accent-color);
+    filter: brightness(140%);
+    
+    flex: 1;
+    padding: 0 2em;
+    
+}
+.skills-n-technologies ul {
+    list-style-type: square;
+    padding-left: 1.5em;
+    line-height: 1.5em;
+}
