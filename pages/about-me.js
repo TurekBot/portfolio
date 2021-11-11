@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 import HeadStuff from "../components/HeadStuff";
 
-
 const myMechanics = "https://www.youtube.com/watch?v=U2jNeObHnZY&t=2s";
 const lubalin = "https://www.tiktok.com/@lubalin/video/6938455969898745094";
 const stuffMadeHere =
@@ -26,7 +25,9 @@ export default function Home() {
               width="100%"
               src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.18169-9/12742033_10208374309346000_5438003255211189640_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_ohc=cQVPGgOEa7wAX_VHVc-&_nc_ht=scontent-dfw5-1.xx&oh=7fc177deb6505f1bae4f30780c724c5c&oe=61B2B60A"
             />
-            <figcaption>My beautiful wife and I on a tandem bike in sunny St. George, UT.</figcaption>
+            <figcaption>
+              My beautiful wife and I on a tandem bike in sunny St. George, UT.
+            </figcaption>
           </figure>
           <figure>
             <video
@@ -44,7 +45,10 @@ export default function Home() {
               </a>
               and watch it with your favorite video player!
             </video>
-            <figcaption>Off to the river with the boys! <br/>(🔊 Sound on to hear a "Here we go!")</figcaption>
+            <figcaption>
+              Off to the river with the boys! <br />
+              (Sound on to hear a little "Here we go! 🙌")
+            </figcaption>
           </figure>
         </section>
         <section>
@@ -80,12 +84,18 @@ export default function Home() {
           </p>
           <h3>Leave it better than you found it.</h3>
           <p>
-            It's the motto I can't seem to stop living by. 😅 I find a typo, I let
-            somebody know. I see some litter, I pick it up. I think of a better
-            way, I pitch it.
+            It's the motto I can't seem to stop living by. 😅 I find a typo, I
+            let somebody know. I see some litter, I pick it up. I think of a
+            better way, I pitch it.
           </p>
           <p>
-            It's the right thing to do, I figure. We're all in this together, after all.
+            It's the right thing to do, I figure. We're all in this together,
+            after all.
+          </p>
+          <br />
+          <p>
+            Thanks for taking a look,
+            <img id="signature" src="/images/First Name Signature.svg"></img>
           </p>
         </section>
         <style jsx>{`
@@ -142,6 +152,12 @@ export default function Home() {
 
           figcaption {
             text-align: center;
+          }
+
+          #signature {
+            margin-top: 1em;
+            display: block;
+            height: 4em;
           }
         `}</style>
       </main>
