@@ -4,6 +4,7 @@ import { useRouter } from "next/dist/client/router";
 import AutoDash from "../../components/software-developer-artifacts/AutoDash";
 import PlaceholderArtifactCard from "../../components/PlaceholderArtifactCard";
 import Challenger from "../../components/software-developer-artifacts/Challeng.er";
+import Connect4 from "../../components/software-developer-artifacts/Connect4";
 
 export default function TheSoftwareDeveloper() {
   const router = useRouter();
@@ -12,7 +13,8 @@ export default function TheSoftwareDeveloper() {
 
   const artifacts = new Map([
     ["auto-dash", <AutoDash/>],
-    ["challeng.er", <Challenger/>]
+    ["challeng.er", <Challenger/>],
+    ["connect-4", <Connect4/>],
   ]);
 
   // We only care about
@@ -51,6 +53,17 @@ export default function TheSoftwareDeveloper() {
           hook={
             <span>
               You can’t do a marathon during COVID. Or can you?
+            </span>
+          }
+        />
+           <ArtifactCard
+          parent={roleName}
+          id="connect-4"
+          thumbnail="/images/connect-4.gif"
+          artifactTitle="Connect 4 Game"
+          hook={
+            <span>
+              Plink, plink-plink. It’s Connect 4. Now appearing digitally—in both text-based and graphical flavors.
             </span>
           }
         />
