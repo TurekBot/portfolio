@@ -228,6 +228,7 @@ svg.role-icon {
 
 .artifact-description {
     display: flex;
+    flex-grow: 1;
 }
 
 .artifact-description a {
@@ -235,7 +236,7 @@ svg.role-icon {
 }
 
 .artifact-description section {
-    flex: 2;
+    flex: 3;
     padding: 0 2em;
 }
 
