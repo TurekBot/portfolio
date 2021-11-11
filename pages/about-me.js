@@ -40,9 +40,7 @@ export default function Home() {
             >
               Sorry, your browser doesn't support embedded videos, but don't
               worry, you can{" "}
-              <a href="https://archive.org/details/BigBuckBunny_124">
-                download it
-              </a>
+              <a href="/images/going-to-the-river.mp4">download it</a>
               and watch it with your favorite video player!
             </video>
             <figcaption>
@@ -95,7 +93,11 @@ export default function Home() {
           <br />
           <p>
             Thanks for taking a look,
-            <img id="signature" alt="My handwritten signature: Brad" src="/images/First Name Signature.svg"></img>
+            <img
+              id="signature"
+              alt="My handwritten signature: Brad"
+              src="/images/First Name Signature.svg"
+            ></img>
           </p>
         </section>
         <style jsx>{`
