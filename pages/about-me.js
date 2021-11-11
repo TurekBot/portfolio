@@ -95,7 +95,7 @@ export default function Home() {
           <br />
           <p>
             Thanks for taking a look,
-            <img id="signature" src="/images/First Name Signature.svg"></img>
+            <img id="signature" alt="My handwritten signature: Brad" src="/images/First Name Signature.svg"></img>
           </p>
         </section>
         <style jsx>{`
@@ -158,6 +158,7 @@ export default function Home() {
             margin-top: 1em;
             display: block;
             height: 4em;
+            pointer-events: none;
           }
         `}</style>
       </main>
