@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <header>
           <h1 className="title">Brad Turek</h1>
-          <p>I'm kind of a jack of all trades—if I can't do it, I learn how. Check out my work below.</p>
+          <p className="intro">I'm kind of a jack of all trades—if I can't do it, I learn how. Check out my work below.</p>
         </header>
         <section id="roleCards">
           <RoleCard roleName="Software Developer" />

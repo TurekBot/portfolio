@@ -39,7 +39,7 @@ main {
 /* ---------------------------------------------------------------------------- */
 
 main {
-    /* align-items: center; */
+    align-items: center;
     margin-left: var(--nav-width);
 }
 
@@ -127,6 +127,10 @@ header {
     width: 100%;
 }
 
+.intro {
+    text-align: center;
+  }
+
 .subtitle {
     display: block;
     font-size: 20pt;
@@ -163,9 +167,10 @@ code {
 
 section#roleCards {
     display: grid;
-    gap: 3em;
+    gap: 2em;
     grid-template-columns: 2fr 2fr;
-    margin-top: 2em;
+    margin-top: 1em;
+
 }
 
 .roleCard {

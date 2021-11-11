@@ -36,12 +36,6 @@ export default function RolePage(props) {
         </section>
       </main>
       <Footer />
-
-      <style jsx>{`
-        .intro {
-          text-align: center;
-        }
-      `}</style>
     </>
   );
 }
