@@ -3,13 +3,17 @@ import ArtifactCard from "../../components/ArtifactCard";
 import { useRouter } from "next/dist/client/router";
 import AutoDash from "../../components/software-developer-artifacts/AutoDash";
 import PlaceholderArtifactCard from "../../components/PlaceholderArtifactCard";
+import Challenger from "../../components/software-developer-artifacts/Challeng.er";
 
 export default function TheSoftwareDeveloper() {
   const router = useRouter();
   const { artifactPaths } = router.query;
   const roleName = "Software Developer"
 
-  const artifacts = new Map([["auto-dash", <AutoDash/>]]);
+  const artifacts = new Map([
+    ["auto-dash", <AutoDash/>],
+    ["challeng.er", <Challenger/>]
+  ]);
 
   // We only care about
   const selectedArtifact = (artifactPaths) ? artifactPaths[0] : null; 
@@ -39,7 +43,17 @@ export default function TheSoftwareDeveloper() {
             </span>
           }
         />
-        <PlaceholderArtifactCard />
+        <ArtifactCard
+          parent={roleName}
+          id="challeng.er"
+          thumbnail="/images/Challeng.er-screenshot.png"
+          artifactTitle="Challeng.er"
+          hook={
+            <span>
+              You can’t do a marathon during COVID. Or can you?
+            </span>
+          }
+        />
       </RolePage>
     </>
   );

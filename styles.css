@@ -226,6 +226,10 @@ svg.role-icon {
     margin-top: 2em;
 }
 
+.artifact-cards img {
+    width: 300px;
+ }
+
 .artifact-description {
     display: flex;
     flex-grow: 1;

@@ -27,7 +27,7 @@ export default function AutoDash() {
       </p>
       </section>
       <aside className="skills-n-technologies">
-          <h3>Skills & Technologies</h3>
+          <h3>Skills &amp; Technologies</h3>
           <ul>
               <li>Pattern Matching</li>
               <li>AutoHotkey</li>
