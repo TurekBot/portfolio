@@ -45,7 +45,7 @@ export default function Navigation() {
             </a>
           </li>
           <li>
-            <a href="/about-me">About Me</a>
+            <a href="/#about-me">About Me</a>
           </li>
         </ul>
       </nav>
