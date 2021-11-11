@@ -25,11 +25,18 @@ export default function Challenger() {
           diagrams starting with the concepts and people at play and ending with
           fully fleshed out implementation-ready object diagrams.
         </p>
+        <iframe
+          src="/documents/UML Diagrams.pdf"
+          width="100%"
+          height="500px"
+        ></iframe>
       </section>
       <aside className="skills-n-technologies">
         <h3>Skills &amp; Technologies</h3>
         <ul>
-          <li>UML
+          <li><a href="https://astah.net/">Astah™</a></li>
+          <li>
+            UML
             <ul>
               <li>Class Diagrams</li>
               <li>Object Diagrams</li>
@@ -40,11 +47,11 @@ export default function Challenger() {
               <li>Communication Diagrams</li>
             </ul>
           </li>
-          <li>Wireframing</li>
-          <li>Balsamiq</li>
+          <li>Operational Patterns</li>
+          <li>Zed Notation</li>
+          <li>LaTeX</li>
           <li>Domain Modeling</li>
           <li>Implementation Modeling</li>
-          <li>Astah</li>
         </ul>
       </aside>
     </>

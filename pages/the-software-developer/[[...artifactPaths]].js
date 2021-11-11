@@ -46,7 +46,7 @@ export default function TheSoftwareDeveloper() {
         <ArtifactCard
           parent={roleName}
           id="challeng.er"
-          thumbnail="/images/Challeng.er-screenshot.png"
+          thumbnail="/images/Challeng.er-diagrams-screenshot.png"
           artifactTitle="Challeng.er"
           hook={
             <span>
