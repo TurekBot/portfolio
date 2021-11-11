@@ -44,9 +44,9 @@ export default function Navigation() {
               Technical Writer & Editor
             </a>
           </li>
-          {/* <li>
-            <a href="#">Contact</a>
-          </li> */}
+          <li>
+            <a href="/about-me">About Me</a>
+          </li>
         </ul>
       </nav>
     </section>
