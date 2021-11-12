@@ -223,6 +223,10 @@ svg.role-icon {
     animation-timing-function: ease;
 }
 
+figure.artifact-card figcaption {
+    color: black;
+}
+
 .artifact-cards {
     width: 100%;
     display: grid;
@@ -233,6 +237,7 @@ svg.role-icon {
 
 .artifact-cards img {
     width: 275px;
+    height: 275px;
  }
 
 .artifact-description {
@@ -300,4 +305,15 @@ aside#dust {
 }
 aside#dust > span {
     font-size: 7em;
+}
+
+figcaption {
+    color: gray;
+}
+
+figure#memoranda, #memoranda img {
+    /* float: left; */
+    /* width: 50% */
+    margin: auto;
+    width: 100%;
 }

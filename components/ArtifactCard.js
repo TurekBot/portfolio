@@ -5,7 +5,7 @@ export default function ArtifactCard(props) {
 
   return (
     <a href={props.id && props.parent ? linkHref : "#"}>
-      <figure>
+      <figure className="artifact-card">
         {props.thumbnail ? <img src={props.thumbnail} /> : placeholder}
         <figcaption>
           <h1>{props.artifactTitle}</h1>

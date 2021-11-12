@@ -5,6 +5,7 @@ import AutoDash from "../../components/software-developer-artifacts/AutoDash";
 import PlaceholderArtifactCard from "../../components/PlaceholderArtifactCard";
 import Challenger from "../../components/software-developer-artifacts/Challeng.er";
 import Connect4 from "../../components/software-developer-artifacts/Connect4";
+import Knuckles from "../../components/software-developer-artifacts/Knuckles";
 
 export default function TheSoftwareDeveloper() {
   const router = useRouter();
@@ -12,6 +13,7 @@ export default function TheSoftwareDeveloper() {
   const roleName = "Software Developer"
 
   const artifacts = new Map([
+    ["knuckles", <Knuckles/>],
     ["auto-dash", <AutoDash/>],
     ["challeng.er", <Challenger/>],
     ["connect-4", <Connect4/>],
@@ -35,16 +37,27 @@ export default function TheSoftwareDeveloper() {
       >
         <ArtifactCard
           parent={roleName}
-          id="auto-dash"
-          thumbnail="/images/AutoDash.gif"
-          artifactTitle="AutoDash"
+          id="knuckles"
+          thumbnail="/images/undraw_scrum_board.svg"
+          artifactTitle="Agile Team: Knuckle's Dojo Scheduler"
           hook={
             <span>
-              Em dashes should be easy to type—but they’re not. AutoDash fixes
-              that.
+              It's all about delivering early and often—and listening to your customers!
             </span>
           }
         />
+        <ArtifactCard
+        parent={roleName}
+        id="auto-dash"
+        thumbnail="/images/AutoDash.gif"
+        artifactTitle="AutoDash"
+        hook={
+          <span>
+            Em dashes should be easy to type—but they’re not. AutoDash fixes
+            that.
+          </span>
+        }
+      />
         <ArtifactCard
           parent={roleName}
           id="challeng.er"
