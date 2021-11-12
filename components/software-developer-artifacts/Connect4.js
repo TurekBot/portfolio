@@ -1,8 +1,10 @@
+import ArtifactStory from "../ArtifactStory";
+import SkillsNTechnologies from "../SkillsNTechnologies";
+
 export default function Connect4() {
   return (
     <>
-      <section>
-        <h2>Connect 4 Game</h2>
+      <ArtifactStory title="Connect 4 Game">
         <p>
           Plink, plink-plink. It’s Connect 4. Now appearing digitally—in both
           text-based and graphical flavors.
@@ -62,19 +64,15 @@ export default function Connect4() {
             allowfullscreen
           ></iframe>
         </div>
-
-      </section>
-      <aside className="skills-n-technologies">
-        <h3>Skills &amp; Technologies</h3>
-        <ul>
-          <li>JavaFX</li>
-          <li>FXML</li>
-          <li>Gradle</li>
-          <li>Git</li>
-          <li>Desktop Application</li>
-          <li>Interaction Design</li>
-        </ul>
-      </aside>
+      </ArtifactStory>
+      <SkillsNTechnologies>
+        <li>JavaFX</li>
+        <li>FXML</li>
+        <li>Gradle</li>
+        <li>Git</li>
+        <li>Desktop Application</li>
+        <li>Interaction Design</li>
+      </SkillsNTechnologies>
     </>
   );
 }
