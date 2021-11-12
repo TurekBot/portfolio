@@ -2,6 +2,9 @@ import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
 export default function Knuckles() {
+
+const memoranda = "http://memoranda.sourceforge.net/overview.html";
+
   return (
     <>
       <ArtifactStory title="An Agile Experience: Knuckle's Dojo">
@@ -13,13 +16,13 @@ export default function Knuckles() {
 
         <p>
           Everyone split into agile teams. The task was to turn an old crusty
-          piece of software, named Memoranda, into something useful. Our
+          piece of software, named <a href={memoranda}>Memoranda</a>, into something useful. Our
           customer needed us to turn it into a{" "}
           <strong>class scheduling software</strong> for the local martial arts
           dojo.
         </p>
         <figure id="memoranda">
-          <img src="http://memoranda.sourceforge.net/images/a1.jpg" />
+          <img src="/images/memoranda.gif" />
           <figcaption>Memoranda in all it's early-2000s glory.</figcaption>
         </figure>
         <p>
