@@ -286,3 +286,14 @@ svg.role-icon {
     height: 100%;
   }
 /* ------------------------------------------------------ */
+
+aside#dust {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    text-align: center;
+}
+aside#dust > span {
+    font-size: 7em;
+}
