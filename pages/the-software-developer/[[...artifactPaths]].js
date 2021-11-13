@@ -19,7 +19,7 @@ export default function TheSoftwareDeveloper() {
     ["connect-4", <Connect4/>],
   ]);
 
-  // We only care about
+  
   const selectedArtifact = (artifactPaths) ? artifactPaths[0] : null; 
 
   return (
