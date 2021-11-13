@@ -1,12 +1,8 @@
 import RolePage from "../../components/RolePage";
 import ArtifactCard from "../../components/ArtifactCard";
 import { useRouter } from "next/dist/client/router";
-import AutoDash from "../../components/software-developer-artifacts/AutoDash";
-import PlaceholderArtifactCard from "../../components/PlaceholderArtifactCard";
-import Challenger from "../../components/software-developer-artifacts/Challeng.er";
-import Connect4 from "../../components/software-developer-artifacts/Connect4";
-import Knuckles from "../../components/software-developer-artifacts/Knuckles";
 import ColoringWords from "../../components/visual-communicator/ColoringWords";
+import RegalJumpers from "../../components/visual-communicator/RegalJumpers";
 
 export default function TheVisualCommunicator() {
   const router = useRouter();
@@ -15,6 +11,7 @@ export default function TheVisualCommunicator() {
 
   const artifacts = new Map([
     ["coloring-words", <ColoringWords/>],
+    ["regal-jumpers", <RegalJumpers/>],
   ]);
 
   const selectedArtifact = (artifactPaths) ? artifactPaths[0] : null; 
@@ -25,7 +22,7 @@ export default function TheVisualCommunicator() {
         pageTitle={roleName}
         intro={
           <>
-            My mantra: CRAP, CRAP, CRAP. (Contrast, Repetition, Alignment, Proximity—what were <em>you</em> thinking?)
+            My mantra: CRAP, CRAP, CRAP. (Contrast, Repetition, Alignment, Proximity—what were <em>you</em> thinking? 😄)
             {/* TODO: Revise! 😂 */}
           </>
         }
@@ -40,6 +37,17 @@ export default function TheVisualCommunicator() {
           hook={
             <span>
               Simple, yet colorful and profound.
+            </span>
+          }
+        />
+        <ArtifactCard
+          parent={roleName}
+          id="regal-jumpers"
+          thumbnail="/images/surprise-jumper.png"
+          artifactTitle="Regal Jumpers"
+          hook={
+            <span>
+              Jumping spiders are like dogs. They can bite you, but they generally don’t. 
             </span>
           }
         />
