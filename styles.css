@@ -340,6 +340,6 @@ figure#memoranda {
     width: 100%
 }
 
-#regal-jumpers, #regal-jumpers-first-draft {
+.zoom-worthy-image {
     cursor: zoom-in;
 }

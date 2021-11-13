@@ -34,6 +34,7 @@ export default function RegalJumpers() {
             <img
               alt='A large orange "Psst..." at top. In the bottom right corner, there&apos;s a pink square with white text in it, but the text much too small.'
               id="regal-jumpers-first-draft"
+              className="zoom-worthy-image"
               src="/images/regal-jumpers-first-draft.png"
             />
           </a>
