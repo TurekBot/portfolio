@@ -1,13 +1,18 @@
 import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
-export default function RegalJumpers() {
+export default function RegalJumpers(props) {
   const bea =
     "https://www.tiktok.com/@mini_robomuppets/video/6981824206040321286?is_from_webapp=1&sender_device=pc&web_id7005365690221086214";
 
   return (
     <>
-      <ArtifactStory title="Regal Jumpers">
+      <ArtifactStory
+        title="Regal Jumpers"
+        id={props.id}
+        nextArtifactLink={props.nextArtifactLink}
+        previousArtifactLink={props.previousArtifactLink}
+      >
         <p>
           Jumping spiders are like dogs. They can bite you, but they generally
           don’t.

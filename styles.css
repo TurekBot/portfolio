@@ -256,7 +256,6 @@ figure.artifact-card figcaption {
     padding: .5em;
     border: solid black 1px;
     align-self: stretch;
-    
 }
 
 .see-more-button:hover {
@@ -281,6 +280,17 @@ figure.artifact-card figcaption {
 
 .artifact-story img, .artifact-story iframe {
     max-width: 100%;
+}
+
+.artifact-story nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0em; 
+}
+
+.next-button, .previous-button {
+    padding: .5em;
+    background-color: var(--accent-color);
 }
 
 .skills-n-technologies {
