@@ -46,6 +46,7 @@ const memoranda = "http://memoranda.sourceforge.net/overview.html";
           system to the app. My senseis Leonardo and Michelangelo would be
           proud, I'm sure.
         </p>
+        <figure>
         <video
           controls
           loop
@@ -58,6 +59,8 @@ const memoranda = "http://memoranda.sourceforge.net/overview.html";
           you can <a href="/images/dojo-demo.mp4">download it</a>
           and watch it with your favorite video player!
         </video>
+          <figcaption>A demo of the improved app; I was chiefly responsible for this scheduling section.</figcaption>
+        </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
         <li>Agile</li>
