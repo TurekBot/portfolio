@@ -8,22 +8,30 @@ import Navigation from "./Navigation";
 import { useRouter } from "next/dist/client/router";
 
 export default function RolePage(props) {
-
   const router = useRouter();
 
-  // This name, "artifactPaths", matches the name of this file.
+  // This name, "artifactPaths", matches the name of the role "page" files (see /pages directory).
+  // The double braces make it optional and the ... makes it get all slugs, not just the first.
+  // The artifactPaths array will capture everything after the role page's slug. For example
+  // /the-visual-communicator/kids-in-america
+  // anything after this point↑.
+  // We only need the first one, though.
+  // For more clarity, look here: https://nextjs.org/docs/routing/dynamic-routes
   const { artifactPaths } = router.query;
-  const selectedArtifactId = (artifactPaths) ? artifactPaths[0] : null; 
-
-  const roleClassName = convertRoleNameToClassName(props.pageTitle);
+  const selectedArtifactId = artifactPaths ? artifactPaths[0] : null;
 
   console.log("selected artifact id:");
   console.log(props.selectedArtifactId);
 
+  const selectedArtifact = getSelectedArtifact(
+    props.artifacts,
+    selectedArtifactId
+  );
+
+  const roleClassName = convertRoleNameToClassName(props.pageTitle);
+
   const artifactCards = props.children;
 
-  const selectedArtifact = getSelectedArtifact(props.artifacts, selectedArtifactId);
-  
   return (
     <>
       <Head>
@@ -36,7 +44,11 @@ export default function RolePage(props) {
           <h1>Brad the {props.pageTitle}</h1>
           <p className="intro">{props.intro}</p>
         </header>
-        <section className={selectedArtifact ? "artifact-description" : "artifact-cards"}>
+        <section
+          className={
+            selectedArtifact ? "artifact-description" : "artifact-cards"
+          }
+        >
           {selectedArtifact ? selectedArtifact : artifactCards}
         </section>
       </main>
@@ -45,6 +57,11 @@ export default function RolePage(props) {
   );
 }
 
+/**
+ * Goes through the list and gives everyone a next and a previous (based on their order in the array.)
+ * @param {*} artifacts an array of artifact components
+ * @param {*} roleName we'll turn this into a slug
+ */
 export function generateNextAndPrevious(artifacts, roleName) {
   artifacts.forEach((element, index) => {
     const lastIndex = artifacts.length - 1;
@@ -78,7 +95,6 @@ export function generateNextAndPrevious(artifacts, roleName) {
     artifacts[index] = newElement;
   });
 }
-
 
 function getSelectedArtifact(artifacts, selectedArtifactId) {
   return artifacts.reduce((previousElement, currentElement) => {
