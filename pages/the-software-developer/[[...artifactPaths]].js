@@ -7,20 +7,23 @@ import Challenger from "../../components/software-developer-artifacts/Challeng.e
 import Connect4 from "../../components/software-developer-artifacts/Connect4";
 import Knuckles from "../../components/software-developer-artifacts/Knuckles";
 
-
 export default function TheSoftwareDeveloper() {
+  const roleName = "Software Developer";
 
-  const roleName = "Software Developer"
+  const knucklesId = "knuckles";
+  const autoDashId = "auto-dash";
+  const challengerId = "challeng.er";
+  const connect4Id = "connect-4";
 
   const artifacts = new Array(
-    <Knuckles id="knuckles"/>,
-    <AutoDash id="auto-dash"/>,
-    <Challenger id="challeng.er" />,
-    <Connect4 id="connect-4" />
+    <Knuckles id={knucklesId} />,
+    <AutoDash id={autoDashId} />,
+    <Challenger id={challengerId} />,
+    <Connect4 id={connect4Id} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
-  
+
   return (
     <>
       <RolePage
@@ -35,46 +38,44 @@ export default function TheSoftwareDeveloper() {
       >
         <ArtifactCard
           parent={roleName}
-          id="knuckles"
+          id={knucklesId}
           thumbnail="/images/undraw_scrum_board.svg"
           artifactTitle="Agile Team: Knuckle's Dojo Scheduler"
           hook={
             <span>
-              It's all about delivering early and often—and listening to your customers!
+              It's all about delivering early and often—and listening to your
+              customers!
             </span>
           }
         />
         <ArtifactCard
-        parent={roleName}
-        id="auto-dash"
-        thumbnail="/images/AutoDash.gif"
-        artifactTitle="AutoDash"
-        hook={
-          <span>
-            Em dashes should be easy to type—but they’re not. AutoDash fixes
-            that.
-          </span>
-        }
-      />
-        <ArtifactCard
           parent={roleName}
-          id="challeng.er"
-          thumbnail="/images/Challeng.er-diagrams-screenshot.png"
-          artifactTitle="Challeng.er"
+          id={autoDashId}
+          thumbnail="/images/AutoDash.gif"
+          artifactTitle="AutoDash"
           hook={
             <span>
-              You can’t do a marathon during COVID. Or can you?
+              Em dashes should be easy to type—but they’re not. AutoDash fixes
+              that.
             </span>
           }
         />
-           <ArtifactCard
+        <ArtifactCard
           parent={roleName}
-          id="connect-4"
+          id={challengerId}
+          thumbnail="/images/Challeng.er-diagrams-screenshot.png"
+          artifactTitle="Challeng.er"
+          hook={<span>You can’t do a marathon during COVID. Or can you?</span>}
+        />
+        <ArtifactCard
+          parent={roleName}
+          id={connect4Id}
           thumbnail="/images/connect-4.gif"
           artifactTitle="Connect 4 Game"
           hook={
             <span>
-              Plink, plink-plink. It’s Connect 4. Now appearing digitally—in both text-based and graphical flavors.
+              Plink, plink-plink. It’s Connect 4. Now appearing digitally—in
+              both text-based and graphical flavors.
             </span>
           }
         />

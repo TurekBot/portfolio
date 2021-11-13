@@ -7,15 +7,19 @@ import RegalJumpers from "../../components/visual-communicator/RegalJumpers";
 import KidsInAmerica from "../../components/visual-communicator/KidsInAmerica";
 import JawDrop from "../../components/visual-communicator/JawDrop";
 
-
 export default function TheVisualCommunicator() {
   const roleName = "Visual Communicator";
 
+  const coloringWordsId = "coloring-words";
+  const regalJumpersId = "regal-jumpers";
+  const kidsInAmericaId = "kids-in-america";
+  const jawDropId = "jaw-drop";
+
   const artifacts = new Array(
-    <ColoringWords id="coloring-words" />,
-    <RegalJumpers id="regal-jumpers" />,
-    <KidsInAmerica id="kids-in-america" />,
-    <JawDrop id="jaw-drop" />
+    <ColoringWords id={coloringWordsId} />,
+    <RegalJumpers id={regalJumpersId} />,
+    <KidsInAmerica id={kidsInAmericaId} />,
+    <JawDrop id={jawDropId} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -35,14 +39,14 @@ export default function TheVisualCommunicator() {
       >
         <ArtifactCard
           parent={roleName}
-          id="coloring-words"
+          id={coloringWordsId}
           thumbnail="/images/harmony.png"
           artifactTitle="Coloring Words"
           hook={<span>Simple, yet colorful and profound.</span>}
         />
         <ArtifactCard
           parent={roleName}
-          id="regal-jumpers"
+          id={regalJumpersId}
           thumbnail="/images/surprise-jumper.png"
           artifactTitle="Regal Jumpers"
           hook={
@@ -54,7 +58,7 @@ export default function TheVisualCommunicator() {
         />
         <ArtifactCard
           parent={roleName}
-          id="kids-in-america"
+          id={kidsInAmericaId}
           thumbnail="/images/👶 lt 18—Choropleth Map.svg"
           artifactTitle="Kids in America"
           hook={
@@ -71,7 +75,7 @@ export default function TheVisualCommunicator() {
         />
         <ArtifactCard
           parent={roleName}
-          id="jaw-drop"
+          id={jawDropId}
           thumbnail="/images/jaw-drop.png"
           artifactTitle="My jaw didn't drop: it shattered"
           hook={
