@@ -1,5 +1,6 @@
 import { convertRoleNameToClassName } from "./RoleCard";
-import ArtifactCard from "./ArtifactCard";
+import { convertRoleNameToPageName } from "./RoleCard";
+import React from "react";
 import HeadStuff from "./HeadStuff";
 import Head from "next/head";
 import Footer from "./Footer";
@@ -8,14 +9,12 @@ import Navigation from "./Navigation";
 export default function RolePage(props) {
   const roleClassName = convertRoleNameToClassName(props.pageTitle);
 
-  console.log("all artifacts:");
-  console.log(props.artifacts);
-
-  console.log("selected artifact:");
-  console.log(props.selectedArtifact);
+  console.log("selected artifact id:");
+  console.log(props.selectedArtifactId);
 
   const artifactCards = props.children;
 
+  const selectedArtifact = getSelectedArtifact(props.artifacts, props.selectedArtifactId);
   
   return (
     <>
@@ -29,11 +28,61 @@ export default function RolePage(props) {
           <h1>Brad the {props.pageTitle}</h1>
           <p className="intro">{props.intro}</p>
         </header>
-        <section className={props.selectedArtifact ? "artifact-description" : "artifact-cards"}>
-          {props.selectedArtifact ? props.selectedArtifact : artifactCards}
+        <section className={selectedArtifact ? "artifact-description" : "artifact-cards"}>
+          {selectedArtifact ? selectedArtifact : artifactCards}
         </section>
       </main>
       <Footer />
     </>
   );
+}
+
+export function generateNextAndPrevious(artifacts, roleName) {
+  artifacts.forEach((element, index) => {
+    const lastIndex = artifacts.length - 1;
+
+    let next = index + 1;
+    let previous = index - 1;
+
+    if (index === 0) {
+      previous = artifacts.length - 1;
+    }
+    if (index === lastIndex) {
+      next = 0;
+    }
+
+    const nextLink =
+      "/" +
+      convertRoleNameToPageName(roleName) +
+      "/" +
+      artifacts[next].props.id;
+    const previousLink =
+      "/" +
+      convertRoleNameToPageName(roleName) +
+      "/" +
+      artifacts[previous].props.id;
+
+    // Add the new props to the component
+    const newElement = React.cloneElement(element, {
+      nextArtifactLink: nextLink,
+      previousArtifactLink: previousLink,
+    });
+    artifacts[index] = newElement;
+  });
+}
+
+
+function getSelectedArtifact(artifacts, selectedArtifactId) {
+  return artifacts.reduce((previousElement, currentElement) => {
+    if (previousElement && previousElement.props.id === selectedArtifactId) {
+      return previousElement;
+    } else if (
+      currentElement &&
+      currentElement.props.id === selectedArtifactId
+    ) {
+      return currentElement;
+    } else {
+      return undefined;
+    }
+  });
 }

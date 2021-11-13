@@ -6,7 +6,7 @@ import RegalJumpers from "../../components/visual-communicator/RegalJumpers";
 import KidsInAmerica from "../../components/visual-communicator/KidsInAmerica";
 import JawDrop from "../../components/visual-communicator/JawDrop";
 import React from "react";
-import { convertRoleNameToPageName } from "../../components/RoleCard";
+import { generateNextAndPrevious } from "../../components/RolePage";
 
 export default function TheVisualCommunicator() {
   const router = useRouter();
@@ -24,11 +24,8 @@ export default function TheVisualCommunicator() {
 
   generateNextAndPrevious(artifacts, roleName);
 
-  console.log("processed artifacts:");
-  console.log(artifacts);
-
   const selectedArtifactId = artifactPaths ? artifactPaths[0] : null;
-  const selectedArtifact = getSelectedArtifact(artifacts, selectedArtifactId);
+
 
   return (
     <>
@@ -42,7 +39,7 @@ export default function TheVisualCommunicator() {
           </>
         }
         artifacts={artifacts}
-        selectedArtifact={selectedArtifact}
+        selectedArtifactId={selectedArtifactId}
       >
         <ArtifactCard
           parent={roleName}
@@ -94,51 +91,5 @@ export default function TheVisualCommunicator() {
   );
 }
 
-function generateNextAndPrevious(artifacts, roleName) {
-  artifacts.forEach((element, index) => {
-    const lastIndex = artifacts.length - 1;
 
-    let next = index + 1;
-    let previous = index - 1;
 
-    if (index === 0) {
-      previous = artifacts.length - 1;
-    }
-    if (index === lastIndex) {
-      next = 0;
-    }
-
-    const nextLink =
-      "/" +
-      convertRoleNameToPageName(roleName) +
-      "/" +
-      artifacts[next].props.id;
-    const previousLink =
-      "/" +
-      convertRoleNameToPageName(roleName) +
-      "/" +
-      artifacts[previous].props.id;
-
-    // Add the new props to the component
-    const newElement = React.cloneElement(element, {
-      nextArtifactLink: nextLink,
-      previousArtifactLink: previousLink,
-    });
-    artifacts[index] = newElement;
-  });
-}
-
-function getSelectedArtifact(artifacts, selectedArtifactId) {
-  return artifacts.reduce((previousElement, currentElement) => {
-    if (previousElement && previousElement.props.id === selectedArtifactId) {
-      return previousElement;
-    } else if (
-      currentElement &&
-      currentElement.props.id === selectedArtifactId
-    ) {
-      return currentElement;
-    } else {
-      return undefined;
-    }
-  });
-}
