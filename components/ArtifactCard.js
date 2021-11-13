@@ -11,7 +11,7 @@ export default function ArtifactCard(props) {
           <h1>{props.artifactTitle}</h1>
           <p>{props.hook}</p>
         </figcaption>
-        <a href={props.id && props.parent ? linkHref : "#"} class="see-more-button">See more...</a>
+        <a href={props.id && props.parent ? linkHref : "#"} className="see-more-button">See more...</a>
         <style jsx>{`
           figure {
             text-align: center;
