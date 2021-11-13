@@ -255,7 +255,7 @@ figure.artifact-card figcaption {
     padding: 0 2em;
 }
 
-.artifact-story img {
+.artifact-story img, .artifact-story iframe {
     max-width: 100%;
 }
 
@@ -342,4 +342,22 @@ figure#memoranda {
 
 .zoom-worthy-image {
     cursor: zoom-in;
+}
+
+button {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    /* text-decoration: none; */
+    display: inline-block;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 2px 2px hsla(0, 100%, 0%, 0.5);
+}
+
+button:active {
+    box-shadow: inset 0px 0px 2px hsla(0, 100%, 0%, 0.5);
 }

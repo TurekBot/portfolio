@@ -4,6 +4,7 @@ import { useRouter } from "next/dist/client/router";
 import ColoringWords from "../../components/visual-communicator/ColoringWords";
 import RegalJumpers from "../../components/visual-communicator/RegalJumpers";
 import KidsInAmerica from "../../components/visual-communicator/KidsInAmerica";
+import JawDrop from "../../components/visual-communicator/JawDrop";
 
 export default function TheVisualCommunicator() {
   const router = useRouter();
@@ -14,6 +15,7 @@ export default function TheVisualCommunicator() {
     ["coloring-words", <ColoringWords />],
     ["regal-jumpers", <RegalJumpers />],
     ["kids-in-america", <KidsInAmerica />],
+    ["jaw-drop", <JawDrop/>],
   ]);
 
   const selectedArtifact = artifactPaths ? artifactPaths[0] : null;
@@ -62,6 +64,17 @@ export default function TheVisualCommunicator() {
                 “🎶We're the kids, we're the kids in America🎵”
               </a>{" "}
               Ahem, I mean <em>they’re</em> the kids in America.
+            </span>
+          }
+        />
+        <ArtifactCard
+          parent={roleName}
+          id="jaw-drop"
+          thumbnail="/images/jaw-drop.png"
+          artifactTitle="My jaw didn't drop: it shattered"
+          hook={
+            <span>
+             Something about movement really commands attention.
             </span>
           }
         />
