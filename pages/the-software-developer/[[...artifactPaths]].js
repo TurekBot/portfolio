@@ -1,17 +1,15 @@
 import RolePage from "../../components/RolePage";
 import ArtifactCard from "../../components/ArtifactCard";
-import { useRouter } from "next/dist/client/router";
+import { generateNextAndPrevious } from "../../components/RolePage";
+
 import AutoDash from "../../components/software-developer-artifacts/AutoDash";
 import Challenger from "../../components/software-developer-artifacts/Challeng.er";
 import Connect4 from "../../components/software-developer-artifacts/Connect4";
 import Knuckles from "../../components/software-developer-artifacts/Knuckles";
-import { generateNextAndPrevious } from "../../components/RolePage";
+
 
 export default function TheSoftwareDeveloper() {
-  const router = useRouter();
 
-  // This name, "artifactPaths", matches the name of this file.
-  const { artifactPaths } = router.query;
   const roleName = "Software Developer"
 
   const artifacts = new Array(
@@ -23,8 +21,6 @@ export default function TheSoftwareDeveloper() {
 
   generateNextAndPrevious(artifacts, roleName);
   
-  const selectedArtifactId = (artifactPaths) ? artifactPaths[0] : null; 
-
   return (
     <>
       <RolePage
@@ -36,7 +32,6 @@ export default function TheSoftwareDeveloper() {
           </>
         }
         artifacts={artifacts}
-        selectedArtifactId={selectedArtifactId}
       >
         <ArtifactCard
           parent={roleName}

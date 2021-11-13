@@ -1,18 +1,14 @@
 import RolePage from "../../components/RolePage";
 import ArtifactCard from "../../components/ArtifactCard";
-import { useRouter } from "next/dist/client/router";
+import { generateNextAndPrevious } from "../../components/RolePage";
+
 import ColoringWords from "../../components/visual-communicator/ColoringWords";
 import RegalJumpers from "../../components/visual-communicator/RegalJumpers";
 import KidsInAmerica from "../../components/visual-communicator/KidsInAmerica";
 import JawDrop from "../../components/visual-communicator/JawDrop";
-import React from "react";
-import { generateNextAndPrevious } from "../../components/RolePage";
+
 
 export default function TheVisualCommunicator() {
-  const router = useRouter();
-
-  // This name, "artifactPaths", matches the name of this file.
-  const { artifactPaths } = router.query;
   const roleName = "Visual Communicator";
 
   const artifacts = new Array(
@@ -23,9 +19,6 @@ export default function TheVisualCommunicator() {
   );
 
   generateNextAndPrevious(artifacts, roleName);
-
-  const selectedArtifactId = (artifactPaths) ? artifactPaths[0] : null; 
-
 
   return (
     <>
@@ -39,7 +32,6 @@ export default function TheVisualCommunicator() {
           </>
         }
         artifacts={artifacts}
-        selectedArtifactId={selectedArtifactId}
       >
         <ArtifactCard
           parent={roleName}
@@ -90,6 +82,3 @@ export default function TheVisualCommunicator() {
     </>
   );
 }
-
-
-

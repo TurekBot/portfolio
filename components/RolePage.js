@@ -5,8 +5,16 @@ import HeadStuff from "./HeadStuff";
 import Head from "next/head";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import { useRouter } from "next/dist/client/router";
 
 export default function RolePage(props) {
+
+  const router = useRouter();
+
+  // This name, "artifactPaths", matches the name of this file.
+  const { artifactPaths } = router.query;
+  const selectedArtifactId = (artifactPaths) ? artifactPaths[0] : null; 
+
   const roleClassName = convertRoleNameToClassName(props.pageTitle);
 
   console.log("selected artifact id:");
@@ -14,7 +22,7 @@ export default function RolePage(props) {
 
   const artifactCards = props.children;
 
-  const selectedArtifact = getSelectedArtifact(props.artifacts, props.selectedArtifactId);
+  const selectedArtifact = getSelectedArtifact(props.artifacts, selectedArtifactId);
   
   return (
     <>
