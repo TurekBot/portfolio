@@ -229,9 +229,9 @@ figure.artifact-card figcaption {
 .artifact-cards {
     width: 100%;
     display: grid;
-    /* gap: 3em; */
+    gap: 2em 0.5em;
     grid-template-columns: 2fr 2fr 2fr;
-    margin-top: 2em;
+    margin: 2em 0;
 }
 
 .artifact-cards img {
@@ -239,6 +239,30 @@ figure.artifact-card figcaption {
     height: 275px;
     object-fit: contain;
     object-position: center;
+}
+
+.artifact-card {
+    padding: 0.25em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.see-more-button {
+    padding: .5em;
+    border: solid black 1px;
+    align-self: stretch;
+    
+}
+
+.see-more-button:hover {
+    background-color: var(--accent-color);
+    color: white;
+    border: solid white 1px
 }
 
 .artifact-description {
