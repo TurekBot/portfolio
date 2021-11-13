@@ -8,17 +8,30 @@ import JawDrop from "../../components/visual-communicator/JawDrop";
 
 export default function TheVisualCommunicator() {
   const router = useRouter();
+
+  // This name, "artifactPaths", matches the name of this file.
   const { artifactPaths } = router.query;
   const roleName = "Visual Communicator";
 
-  const artifacts = new Map([
-    ["coloring-words", <ColoringWords />],
-    ["regal-jumpers", <RegalJumpers />],
-    ["kids-in-america", <KidsInAmerica />],
-    ["jaw-drop", <JawDrop/>],
-  ]);
+  const artifacts = new Array(
+    <ColoringWords id="coloring-words" /> ,
+    <RegalJumpers id="regal-jumpers" /> ,
+    <KidsInAmerica id="kids-in-america" />,
+   <JawDrop id="jaw-drop" />
+  );
 
-  const selectedArtifact = artifactPaths ? artifactPaths[0] : null;
+  const selectedArtifactId = artifactPaths ? artifactPaths[0] : null;
+  const selectedArtifact = artifacts.reduce(
+    (previousElement, currentElement) => {
+      if (previousElement && previousElement.props.id === selectedArtifactId) {
+        return previousElement;
+      } else if (currentElement && currentElement.props.id === selectedArtifactId) {
+        return currentElement;
+      } else {
+        return undefined;
+      }
+    }
+  );
 
   return (
     <>
