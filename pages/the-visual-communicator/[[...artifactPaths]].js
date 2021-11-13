@@ -24,7 +24,7 @@ export default function TheVisualCommunicator() {
 
   generateNextAndPrevious(artifacts, roleName);
 
-  const selectedArtifactId = artifactPaths ? artifactPaths[0] : null;
+  const selectedArtifactId = (artifactPaths) ? artifactPaths[0] : null; 
 
 
   return (

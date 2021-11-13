@@ -1,13 +1,17 @@
 import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
-export default function Knuckles() {
-
-const memoranda = "http://memoranda.sourceforge.net/overview.html";
+export default function Knuckles(props) {
+  const memoranda = "http://memoranda.sourceforge.net/overview.html";
 
   return (
     <>
-      <ArtifactStory title="An Agile Experience: Knuckle's Dojo">
+      <ArtifactStory
+        title="An Agile Experience: Knuckle's Dojo"
+        id={props.id}
+        nextArtifactLink={props.nextArtifactLink}
+        previousArtifactLink={props.previousArtifactLink}
+      >
         <p>
           Though my degree is in UX and Technical Communication, my few years of
           experience in the industry convinced a few professors to allow me to
@@ -16,8 +20,8 @@ const memoranda = "http://memoranda.sourceforge.net/overview.html";
 
         <p>
           Everyone split into agile teams. The task was to turn an old crusty
-          piece of software, named <a href={memoranda}>Memoranda</a>, into something useful. Our
-          customer needed us to turn it into a{" "}
+          piece of software, named <a href={memoranda}>Memoranda</a>, into
+          something useful. Our customer needed us to turn it into a{" "}
           <strong>class scheduling software</strong> for the local martial arts
           dojo.
         </p>
@@ -47,19 +51,22 @@ const memoranda = "http://memoranda.sourceforge.net/overview.html";
           proud, I'm sure.
         </p>
         <figure>
-        <video
-          controls
-          loop
-          autoPlay
-          muted
-          src="/images/dojo-demo.mp4"
-          width="100%"
-        >
-          Sorry, your browser doesn't support embedded videos, but don't worry,
-          you can <a href="/images/dojo-demo.mp4">download it</a>
-          and watch it with your favorite video player!
-        </video>
-          <figcaption>A demo of the improved app; I was chiefly responsible for this scheduling section.</figcaption>
+          <video
+            controls
+            loop
+            autoPlay
+            muted
+            src="/images/dojo-demo.mp4"
+            width="100%"
+          >
+            Sorry, your browser doesn't support embedded videos, but don't
+            worry, you can <a href="/images/dojo-demo.mp4">download it</a>
+            and watch it with your favorite video player!
+          </video>
+          <figcaption>
+            A demo of the improved app; I was chiefly responsible for this
+            scheduling section.
+          </figcaption>
         </figure>
       </ArtifactStory>
       <SkillsNTechnologies>

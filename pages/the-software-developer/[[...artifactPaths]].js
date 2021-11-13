@@ -2,25 +2,28 @@ import RolePage from "../../components/RolePage";
 import ArtifactCard from "../../components/ArtifactCard";
 import { useRouter } from "next/dist/client/router";
 import AutoDash from "../../components/software-developer-artifacts/AutoDash";
-import PlaceholderArtifactCard from "../../components/PlaceholderArtifactCard";
 import Challenger from "../../components/software-developer-artifacts/Challeng.er";
 import Connect4 from "../../components/software-developer-artifacts/Connect4";
 import Knuckles from "../../components/software-developer-artifacts/Knuckles";
+import { generateNextAndPrevious } from "../../components/RolePage";
 
 export default function TheSoftwareDeveloper() {
   const router = useRouter();
+
+  // This name, "artifactPaths", matches the name of this file.
   const { artifactPaths } = router.query;
   const roleName = "Software Developer"
 
-  const artifacts = new Map([
-    ["knuckles", <Knuckles/>],
-    ["auto-dash", <AutoDash/>],
-    ["challeng.er", <Challenger/>],
-    ["connect-4", <Connect4/>],
-  ]);
+  const artifacts = new Array(
+    <Knuckles id="knuckles"/>,
+    <AutoDash id="auto-dash"/>,
+    <Challenger id="challeng.er" />,
+    <Connect4 id="connect-4" />
+  );
 
+  generateNextAndPrevious(artifacts, roleName);
   
-  const selectedArtifact = (artifactPaths) ? artifactPaths[0] : null; 
+  const selectedArtifactId = (artifactPaths) ? artifactPaths[0] : null; 
 
   return (
     <>
@@ -33,7 +36,7 @@ export default function TheSoftwareDeveloper() {
           </>
         }
         artifacts={artifacts}
-        selectedArtifact={selectedArtifact}
+        selectedArtifactId={selectedArtifactId}
       >
         <ArtifactCard
           parent={roleName}

@@ -1,10 +1,15 @@
 import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
-export default function Connect4() {
+export default function Connect4(props) {
   return (
     <>
-      <ArtifactStory title="Connect 4 Game">
+      <ArtifactStory
+        title="Connect 4 Game"
+        id={props.id}
+        nextArtifactLink={props.nextArtifactLink}
+        previousArtifactLink={props.previousArtifactLink}
+      >
         <p>
           Plink, plink-plink. It’s Connect 4. Now appearing digitally—in both
           text-based and graphical flavors.

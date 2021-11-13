@@ -1,10 +1,15 @@
 import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
-export default function AutoDash() {
+export default function AutoDash(props) {
   return (
     <>
-      <ArtifactStory title="AutoDash">
+      <ArtifactStory
+        title="AutoDash"
+        id={props.id}
+        nextArtifactLink={props.nextArtifactLink}
+        previousArtifactLink={props.previousArtifactLink}
+      >
         <p>
           Just type “ - ” (space, hyphen, space) and shazam: “ — ” an automatic
           em dash.

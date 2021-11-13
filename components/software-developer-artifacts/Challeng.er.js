@@ -1,10 +1,15 @@
 import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
-export default function Challenger() {
+export default function Challenger(props) {
   return (
     <>
-      <ArtifactStory title="Challeng.er">
+      <ArtifactStory
+        title="Challeng.er"
+        id={props.id}
+        nextArtifactLink={props.nextArtifactLink}
+        previousArtifactLink={props.previousArtifactLink}
+      >
         <p>
           This app allows friends to join athletic challenges sponsored by
           companies who offer prizes for those who complete the challenge. Users
