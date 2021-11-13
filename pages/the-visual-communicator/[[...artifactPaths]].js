@@ -22,56 +22,13 @@ export default function TheVisualCommunicator() {
     <JawDrop id="jaw-drop" />
   );
 
-  artifacts.forEach((element, index) => {
-    const lastIndex = artifacts.length - 1;
-
-    let next = index + 1;
-    let previous = index - 1;
-
-    if (index === 0) {
-      previous = artifacts.length - 1;
-    }
-    if (index === lastIndex) {
-      next = 0;
-    }
-
-    const nextLink =
-      "/" +
-      convertRoleNameToPageName(roleName) +
-      "/" +
-      artifacts[next].props.id;
-    const previousLink =
-      "/" +
-      convertRoleNameToPageName(roleName) +
-      "/" +
-      artifacts[previous].props.id;
-
-    // Add the new props to the component
-    const newElement = React.cloneElement(element, {
-      nextArtifactLink: nextLink,
-      previousArtifactLink: previousLink,
-    });
-    artifacts[index] = newElement;
-  });
+  generateNextAndPrevious(artifacts, roleName);
 
   console.log("processed artifacts:");
   console.log(artifacts);
 
   const selectedArtifactId = artifactPaths ? artifactPaths[0] : null;
-  const selectedArtifact = artifacts.reduce(
-    (previousElement, currentElement) => {
-      if (previousElement && previousElement.props.id === selectedArtifactId) {
-        return previousElement;
-      } else if (
-        currentElement &&
-        currentElement.props.id === selectedArtifactId
-      ) {
-        return currentElement;
-      } else {
-        return undefined;
-      }
-    }
-  );
+  const selectedArtifact = getSelectedArtifact(artifacts, selectedArtifactId);
 
   return (
     <>
@@ -101,8 +58,8 @@ export default function TheVisualCommunicator() {
           artifactTitle="Regal Jumpers"
           hook={
             <span>
-              Jumping spiders are like dogs. They <em>can</em> bite you, but they
-              generally <em>don’t</em>.
+              Jumping spiders are like dogs. They <em>can</em> bite you, but
+              they generally <em>don’t</em>.
             </span>
           }
         />
@@ -135,4 +92,53 @@ export default function TheVisualCommunicator() {
       </RolePage>
     </>
   );
+}
+
+function generateNextAndPrevious(artifacts, roleName) {
+  artifacts.forEach((element, index) => {
+    const lastIndex = artifacts.length - 1;
+
+    let next = index + 1;
+    let previous = index - 1;
+
+    if (index === 0) {
+      previous = artifacts.length - 1;
+    }
+    if (index === lastIndex) {
+      next = 0;
+    }
+
+    const nextLink =
+      "/" +
+      convertRoleNameToPageName(roleName) +
+      "/" +
+      artifacts[next].props.id;
+    const previousLink =
+      "/" +
+      convertRoleNameToPageName(roleName) +
+      "/" +
+      artifacts[previous].props.id;
+
+    // Add the new props to the component
+    const newElement = React.cloneElement(element, {
+      nextArtifactLink: nextLink,
+      previousArtifactLink: previousLink,
+    });
+    artifacts[index] = newElement;
+  });
+}
+
+function getSelectedArtifact(artifacts, selectedArtifactId) {
+  return artifacts.reduce((previousElement, currentElement) => {
+    if (previousElement && previousElement.props.id === selectedArtifactId) {
+      return previousElement;
+    } else if (
+      currentElement &&
+      currentElement.props.id === selectedArtifactId
+    ) {
+      return currentElement;
+    } else {
+      return undefined;
+    }
+  });
 }
