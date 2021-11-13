@@ -3,18 +3,20 @@ import ArtifactCard from "../../components/ArtifactCard";
 import { useRouter } from "next/dist/client/router";
 import ColoringWords from "../../components/visual-communicator/ColoringWords";
 import RegalJumpers from "../../components/visual-communicator/RegalJumpers";
+import KidsInAmerica from "../../components/visual-communicator/KidsInAmerica";
 
 export default function TheVisualCommunicator() {
   const router = useRouter();
   const { artifactPaths } = router.query;
-  const roleName = "Visual Communicator"
+  const roleName = "Visual Communicator";
 
   const artifacts = new Map([
-    ["coloring-words", <ColoringWords/>],
-    ["regal-jumpers", <RegalJumpers/>],
+    ["coloring-words", <ColoringWords />],
+    ["regal-jumpers", <RegalJumpers />],
+    ["kids-in-america", <KidsInAmerica />],
   ]);
 
-  const selectedArtifact = (artifactPaths) ? artifactPaths[0] : null; 
+  const selectedArtifact = artifactPaths ? artifactPaths[0] : null;
 
   return (
     <>
@@ -22,7 +24,8 @@ export default function TheVisualCommunicator() {
         pageTitle={roleName}
         intro={
           <>
-            My mantra: CRAP, CRAP, CRAP. (Contrast, Repetition, Alignment, Proximity—what were <em>you</em> thinking? 😄)
+            My mantra: CRAP, CRAP, CRAP. (Contrast, Repetition, Alignment,
+            Proximity—what were <em>you</em> thinking? 😄)
             {/* TODO: Revise! 😂 */}
           </>
         }
@@ -34,11 +37,7 @@ export default function TheVisualCommunicator() {
           id="coloring-words"
           thumbnail="/images/harmony.png"
           artifactTitle="Coloring Words"
-          hook={
-            <span>
-              Simple, yet colorful and profound.
-            </span>
-          }
+          hook={<span>Simple, yet colorful and profound.</span>}
         />
         <ArtifactCard
           parent={roleName}
@@ -47,11 +46,25 @@ export default function TheVisualCommunicator() {
           artifactTitle="Regal Jumpers"
           hook={
             <span>
-              Jumping spiders are like dogs. They can bite you, but they generally don’t. 
+              Jumping spiders are like dogs. They can bite you, but they
+              generally don’t.
             </span>
           }
         />
-        
+        <ArtifactCard
+          parent={roleName}
+          id="kids-in-america"
+          thumbnail="/images/👶 lt 18—Choropleth Map.svg"
+          artifactTitle="Kids in America"
+          hook={
+            <span>
+              <a target="_blank" href="https://www.youtube.com/watch?v=qcbUpz3oaSc">
+                “🎶We're the kids, we're the kids in America🎵”
+              </a>{" "}
+              Ahem, I mean <em>they’re</em> the kids in America.
+            </span>
+          }
+        />
       </RolePage>
     </>
   );
