@@ -2,16 +2,17 @@ import RolePage from "../../components/RolePage";
 import ArtifactCard from "../../components/ArtifactCard";
 import { generateNextAndPrevious } from "../../components/RolePage";
 import SquareKnot from "../../components/technical-writer-editor/SquareKnot";
+import CsHandouts from "../../components/technical-writer-editor/CsHandouts";
 
 export default function TheTechnicalWriterEditor() {
   const roleName = "Technical Writer & Editor";
 
-
   const squareKnotId = "square-knot";
+  const csHandoutsId = "cs-handouts";
 
   const artifacts = new Array(
-    <SquareKnot id={squareKnotId}/>,
-    <SquareKnot id={squareKnotId}/>,
+    <SquareKnot id={squareKnotId} />,
+    <CsHandouts id={csHandoutsId} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -23,6 +24,13 @@ export default function TheTechnicalWriterEditor() {
         intro={<>{/* TODO */}</>}
         artifacts={artifacts}
       >
+        <ArtifactCard
+          parent={roleName}
+          id={csHandoutsId}
+          thumbnail="/images/comparing-psp.gif"
+          artifactTitle="CS Handouts: A Glow-Up"
+          hook={<span>Glow-Up: an incredible transformation </span>}
+        />
         <ArtifactCard
           parent={roleName}
           id={squareKnotId}
