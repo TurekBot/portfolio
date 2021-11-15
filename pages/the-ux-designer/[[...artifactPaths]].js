@@ -3,6 +3,7 @@ import ArtifactCard from "../../components/ArtifactCard";
 import { generateNextAndPrevious } from "../../components/RolePage";
 
 import IssueTracker from "../../components/ux-designer/IssueTracker";
+import MrPoorCollegeStudent from "../../components/ux-designer/MrPoorCollegeStudent";
 
 export default function TheUxDesigner() {
   const roleName = "UX Designer";
@@ -12,7 +13,7 @@ export default function TheUxDesigner() {
 
   const artifacts = new Array(
     <IssueTracker id={issueTrackerId} />,
-    <IssueTracker id={issueTrackerId} />
+    <MrPoorCollegeStudent id={mrPoorCollegeStudentId} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
