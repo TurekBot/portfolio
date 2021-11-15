@@ -66,6 +66,7 @@ export default function RegalJumpers(props) {
             <img
               id="regal-jumpers"
               alt='A poster with a large orange, &qout;Psst..." at the top of it and then three large squares along the bottom. The first square is pink and has a line art, curious-looking jumping spider just barely protruding out of it. There is a small white heart in the upper right corner of this square. In the middle square, which is orange, it reads, "Regal Jumpers make great Pets. They&apos;re cute and soft, come in fun colors, and are low maintainance.". In the last square, which is pink, there is a QR code labeled, "Here&apos;s a video of all the fun colors they come in." Peeking from behind this square you can see a peachy ombre jumping spider head.'
+              className="zoom-worthy-image"
               src="/images/regal-jumpers.png"
             />
           </a>
@@ -73,10 +74,13 @@ export default function RegalJumpers(props) {
         </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
         <li>Composition</li>
         <li>Typography</li>
         <li>Color</li>
         <li>Tracing</li>
+
+        <h4>Technologies</h4>
         <li>Adobe Illustrator</li>
       </SkillsNTechnologies>
     </>

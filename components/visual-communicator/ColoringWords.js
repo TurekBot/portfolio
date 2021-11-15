@@ -33,9 +33,12 @@ export default function ColoringWords(props) {
         </p>
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
         <li>Typography</li>
-        <li>Compostion</li>
-
+        <li>Composition</li>
+        <li>Color</li>
+        
+        <h4>Technologies</h4>
         <li>Adobe Illustrator</li>
         <li>SVG</li>
       </SkillsNTechnologies>

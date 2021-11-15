@@ -44,10 +44,14 @@ export default function AutoDash(props) {
         </p>
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
         <li>Pattern Matching</li>
+        <li>User Experience Design</li>
+
+        <h4>Technologies</h4>
         <li>AutoHotkey</li>
         <li>Version Control</li>
-        <li>User Experience Design</li>
+
       </SkillsNTechnologies>
     </>
   );

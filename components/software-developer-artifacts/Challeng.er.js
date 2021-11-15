@@ -2,6 +2,8 @@ import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
 export default function Challenger(props) {
+  const umlDiagrams = "/documents/UML Diagrams.pdf";
+
   return (
     <>
       <ArtifactStory
@@ -17,9 +19,9 @@ export default function Challenger(props) {
         </p>
         <p>
           Though we never did write the code for this app in this software
-          engineering class, we did everything but that: we designed the
-          structure, behavior, and interaction of every component—but we did it
-          using diagrams.
+          engineering class, we did everything but that: we{" "}
+          <strong>designed</strong> the structure, behavior, and interaction of{" "}
+          <strong>every component</strong>—but we did it using diagrams.
         </p>
         <p>
           Unified Modeling Language (UML) was a good fit for visually fleshing
@@ -32,16 +34,34 @@ export default function Challenger(props) {
           diagrams starting with the concepts and people at play and ending with
           fully fleshed out implementation-ready object diagrams.
         </p>
-        <iframe
-          src="/documents/UML Diagrams.pdf"
-          width="100%"
-          height="500px"
-        ></iframe>
+        <p>
+          (I <em>also</em> designed a{" "}
+          <a href="/the-ux-designer/challeng.er-prototype">
+            click-through prototype
+          </a>{" "}
+          of our app.)
+        </p>
+        <h3>All Diagrams</h3>
+
+        <figure>
+          <iframe
+            className="document-preview"
+            width="100%"
+            height="550px"
+            src={umlDiagrams}
+          />
+          <figcaption>
+            A compilation of all the UML diagrams we created and refined while
+            designing this application.{" "}
+            <a href={umlDiagrams} target="_blank" class="fullscreen">
+              Fullscreen
+            </a>
+          </figcaption>
+        </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
-        <li>
-          <a href="https://astah.net/">Astah™</a>
-        </li>
+        <h4>Skills</h4>
+
         <li>
           UML
           <ul>
@@ -53,12 +73,17 @@ export default function Challenger(props) {
             <li>Sequence Diagrams</li>
             <li>Communication Diagrams</li>
           </ul>
+          <li>Operational Patterns</li>
+          <li>Zed Notation</li>
+          <li>Domain Modeling</li>
+          <li>Implementation Modeling</li>
+          <h4>Technologies</h4>
         </li>
-        <li>Operational Patterns</li>
-        <li>Zed Notation</li>
+        <li>
+          <a href="https://astah.net/">Astah™</a>
+        </li>
         <li>LaTeX</li>
-        <li>Domain Modeling</li>
-        <li>Implementation Modeling</li>
+        <li>Word</li>
       </SkillsNTechnologies>
     </>
   );

@@ -38,9 +38,12 @@ export default function JawDrop(props) {
         />
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
         <li>Headline Writing</li>
         <li>"Fold" Awareness</li>
         <li>Typography</li>
+
+        <h4>Technologies</h4>
         <li>HTML</li>
         <li>CSS</li>
       </SkillsNTechnologies>

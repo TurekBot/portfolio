@@ -400,3 +400,7 @@ button:active {
 a.fullscreen::after {
     content: " ⤢";
 }
+
+#connect-4 {
+    float: right;
+}

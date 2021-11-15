@@ -61,7 +61,10 @@ export default function KidsInAmerica(props) {
         </p>
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
         <li>Data Visualization</li>
+
+        <h4>Technologies</h4>
         <li>Adobe Illustrator</li>
         <li>The R Programming Language</li>
         <li>ggplot2</li>

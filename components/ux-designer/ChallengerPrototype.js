@@ -3,7 +3,8 @@ import SkillsNTechnologies from "../SkillsNTechnologies";
 
 export default function ChallengerPrototype(props) {
   const prototypeDocument = "/documents/Challeng.er Prototype with hints.pdf";
-  const prototypeDocumentWithoutHints = "/documents/Challeng.er Prototype no hints.pdf";
+  const prototypeDocumentWithoutHints =
+    "/documents/Challeng.er Prototype no hints.pdf";
 
   return (
     <>
@@ -23,10 +24,10 @@ export default function ChallengerPrototype(props) {
           <a href="/the-software-developer/challeng.er">the Challeng.er App</a>{" "}
           be interactive was crucial to convey how the actual app would work
           before it was ever built. The audience for this artifact was not an
-          end user, but a project manager. Their <strong>time is scarce</strong>. This artifact
-          kept that in mind and addressed it by coalescing the essence of the
-          interactions into something they could <strong>feel and use</strong>, not just read
-          about.{" "}
+          end user, but a project manager. Their <strong>time is scarce</strong>
+          . This artifact kept that in mind and addressed it by coalescing the
+          essence of the interactions into something they could{" "}
+          <strong>feel and use</strong>, not just read about.{" "}
         </p>
         <p>
           The prototype came in the form of a PDF, so there was no overhead to
@@ -46,16 +47,26 @@ export default function ChallengerPrototype(props) {
             clear what you can click.{" "}
             <a href={prototypeDocument} target="_blank" class="fullscreen">
               Fullscreen
-            </a> <br/><br/>Also, here's <a href={prototypeDocumentWithoutHints} target="_blank">a version without</a> the red click hints.
+            </a>{" "}
+            <br />
+            <br />
+            Also, here's{" "}
+            <a href={prototypeDocumentWithoutHints} target="_blank">
+              a version without
+            </a>{" "}
+            the red click hints.
           </figcaption>
         </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
         <li>Prototyping</li>
-        <li>Balsamiq</li>
-        <li>UI Design</li>
         <li>Interaction Design</li>
         <li>User Testing</li>
+        <li>UI Design</li>
+
+        <h4>Technologies</h4>
+        <li>Balsamiq</li>
       </SkillsNTechnologies>
     </>
   );

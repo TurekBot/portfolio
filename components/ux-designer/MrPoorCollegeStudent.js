@@ -44,9 +44,13 @@ export default function MrPoorCollegeStudent(props) {
         </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
+      <h4>Skills</h4>
         <li>Persona Development</li>
         <li>Concise Writing</li>
         <li>Visual Design</li>
+
+        <h4>Technologies</h4>
+        <li>Google Slides</li>
       </SkillsNTechnologies>
     </>
   );

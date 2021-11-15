@@ -70,19 +70,25 @@ export default function Knuckles(props) {
         </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
         <li>Agile</li>
         <li>Scrum</li>
+        <li>Asynchronous Collaboration</li>
+        <li>Legacy Code</li>
+        <li>Continuous Integration</li>
+        <li>Unit Testing</li>
+        <li>Code Reviews</li>
+        <li>Static Analysis</li>
+        <li>Interaction Design</li>
+
+        <h4>Technologies</h4>
         <li>GitHub</li>
         <li>Git</li>
         <li>JavaFX (New UI Framework)</li>
         <li>Java Swing (Old UI Framework)</li>
-        <li>Asynchronous Collaboration</li>
-        <li>Legacy Code</li>
-        <li>Continuous Integration</li>
+
         <li>Travis CI</li>
-        <li>Unit Testing</li>
-        <li>Code Reviews</li>
-        <li>Static Analysis</li>
+
         <li>Gradle</li>
       </SkillsNTechnologies>
     </>

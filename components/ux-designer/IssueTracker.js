@@ -2,8 +2,6 @@ import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
 export default function IssueTracker(props) {
-  
-
   const wireframes = "/documents/Preliminary Wireframes-1.pdf";
   const heuristicEvaluation = "/documents/Heuristic Evaluation.pdf";
   return (
@@ -55,8 +53,17 @@ export default function IssueTracker(props) {
         </p>
 
         <figure>
-        <iframe className="document-preview" width="100%" height="300px" src={wireframes}/><figcaption>
-           The wireframe document. <a href={wireframes} target="_blank" class="fullscreen" >Fullscreen</a>
+          <iframe
+            className="document-preview"
+            width="100%"
+            height="300px"
+            src={wireframes}
+          />
+          <figcaption>
+            The wireframe document.{" "}
+            <a href={wireframes} target="_blank" class="fullscreen">
+              Fullscreen
+            </a>
           </figcaption>
         </figure>
 
@@ -81,22 +88,35 @@ export default function IssueTracker(props) {
           message to the otherwise empty results table.
         </p>
         <figure>
-        <iframe className="document-preview" width="100%" height="300px" src={heuristicEvaluation}/>
-        <figcaption>
-           The heuristic evaluation document, organized by page and severity. <a href={heuristicEvaluation} target="_blank" class="fullscreen" >Fullscreen</a>
+          <iframe
+            className="document-preview"
+            width="100%"
+            height="300px"
+            src={heuristicEvaluation}
+          />
+          <figcaption>
+            The heuristic evaluation document, organized by page and severity.{" "}
+            <a href={heuristicEvaluation} target="_blank" class="fullscreen">
+              Fullscreen
+            </a>
           </figcaption>
         </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
-        
+        <h4>Skills</h4>
         <li>Wireframing</li>
         <li>Prototyping</li>
         <li>Interaction Design</li>
-        <li>Heuristic Evaluation</li>
+        <li>UI Design</li>
         <li>Inspection</li>
-        <li>Balsamiq</li>
+        <li>Heuristic Evaluation</li>
         <li>Word Styles</li>
+
+
+        <h4>Technologies</h4>
         
+        <li>Balsamiq</li>
+        <li>Word</li>
       </SkillsNTechnologies>
     </>
   );

@@ -20,6 +20,7 @@ export default function Connect4(props) {
           graphical platform before, I wanted to go above and beyond and
           replicate the movement of the pieces in real life: them dropping and
           bouncing into the board.
+          <img id="connect-4" src="/images/connect-4.gif" />
         </p>
         <p>
           The technology that defined the user interface is a Desktop
@@ -71,12 +72,18 @@ export default function Connect4(props) {
         </div>
       </ArtifactStory>
       <SkillsNTechnologies>
+        <h4>Skills</h4>
+        <li>UX Design</li>
+        <li>Interaction Design</li>
+        <li>Desktop Application Programming</li>
+        <li>Unit Testing</li>
+
+        <h4>Technologies</h4>
         <li>JavaFX</li>
         <li>FXML</li>
         <li>Gradle</li>
         <li>Git</li>
-        <li>Desktop Application</li>
-        <li>Interaction Design</li>
+        <li>IntelliJ IDEA</li>
       </SkillsNTechnologies>
     </>
   );
