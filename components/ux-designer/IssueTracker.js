@@ -55,7 +55,7 @@ export default function IssueTracker(props) {
         </p>
 
         <figure>
-        <iframe width="100%" height="300px" src={wireframes}/><figcaption>
+        <iframe className="document-preview" width="100%" height="300px" src={wireframes}/><figcaption>
            The wireframe document. <a href={wireframes} target="_blank" class="fullscreen" >Fullscreen</a>
           </figcaption>
         </figure>
@@ -81,13 +81,23 @@ export default function IssueTracker(props) {
           message to the otherwise empty results table.
         </p>
         <figure>
-        <iframe width="100%" height="300px" src={heuristicEvaluation}/>
+        <iframe className="document-preview" width="100%" height="300px" src={heuristicEvaluation}/>
         <figcaption>
            The heuristic evaluation document, organized by page and severity. <a href={heuristicEvaluation} target="_blank" class="fullscreen" >Fullscreen</a>
           </figcaption>
         </figure>
       </ArtifactStory>
-      <SkillsNTechnologies></SkillsNTechnologies>
+      <SkillsNTechnologies>
+        
+        <li>Wireframing</li>
+        <li>Prototyping</li>
+        <li>Interaction Design</li>
+        <li>Heuristic Evaluation</li>
+        <li>Inspection</li>
+        <li>Balsamiq</li>
+        <li>Word Styles</li>
+        
+      </SkillsNTechnologies>
     </>
   );
 }
