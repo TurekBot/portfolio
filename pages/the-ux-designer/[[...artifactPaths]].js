@@ -34,9 +34,14 @@ export default function TheUxDesigner() {
         <ArtifactCard
           parent={roleName}
           id={mrPoorCollegeStudentId}
-          thumbnail="/images/harmony.png"
+          thumbnail="/images/mr-poor-college-student.png"
           artifactTitle="Mr. Poor College Student: A Persona"
-          hook={<span>Simple, yet colorful and profound.</span>}
+          hook={
+            <span>
+              "I don't want anyone to know, but sometimes, when I'm out of milk,
+              I put water in my cereal."
+            </span>
+          }
         />
       </RolePage>
     </>
