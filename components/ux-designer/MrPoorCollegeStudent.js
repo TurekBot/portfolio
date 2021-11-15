@@ -7,7 +7,7 @@ export default function MrPoorCollegeStudent(props) {
   return (
     <>
       <ArtifactStory
-        title="Issue Tracker: Wireframes & Heuristic Evaluation"
+        title="Food Assistance Persona: Mr. Poor College Student"
         id={props.id}
         nextArtifactLink={props.nextArtifactLink}
         previousArtifactLink={props.previousArtifactLink}
