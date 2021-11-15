@@ -305,9 +305,10 @@ figure.artifact-card figcaption {
     top: 2em;
 }
 
-.skills-n-technologies h3 {
+.skills-n-technologies h3, .skills-n-technologies h4 {
     margin-block-end: 0.25em;
 }
+
 
 .skills-n-technologies ul {
     margin-block-start: 0.25em;

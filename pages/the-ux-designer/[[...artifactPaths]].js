@@ -5,6 +5,7 @@ import { generateNextAndPrevious } from "../../components/RolePage";
 import IssueTracker from "../../components/ux-designer/IssueTracker";
 import MrPoorCollegeStudent from "../../components/ux-designer/MrPoorCollegeStudent";
 import ChallengerPrototype from "../../components/ux-designer/ChallengerPrototype";
+import UsableForms from "../../components/ux-designer/UsableForms";
 
 export default function TheUxDesigner() {
   const roleName = "UX Designer";
@@ -12,11 +13,14 @@ export default function TheUxDesigner() {
   const issueTrackerId = "issue-tracker";
   const mrPoorCollegeStudentId = "mr-poor-college-student";
   const challengerPrototypeId = "challeng.er-prototype";
+  const usableFormsId = "usable-forms";
+
 
   const artifacts = new Array(
     <IssueTracker id={issueTrackerId} />,
     <MrPoorCollegeStudent id={mrPoorCollegeStudentId} />,
     <ChallengerPrototype id={challengerPrototypeId} />,
+    <UsableForms id={usableFormsId} />,
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -58,6 +62,17 @@ export default function TheUxDesigner() {
             <span>
               “If a picture is worth a thousand words, a prototype is worth a
               thousand meetings” <br/>―IDEO.org
+            </span>
+          }
+        />
+        <ArtifactCard
+          parent={roleName}
+          id={usableFormsId}
+          thumbnail="/images/usability-test-forms.gif"
+          artifactTitle="Usable Usability Test Forms"
+          hook={
+            <span>
+              Very meta.
             </span>
           }
         />
