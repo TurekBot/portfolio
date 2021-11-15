@@ -395,3 +395,7 @@ button:hover {
 button:active {
     box-shadow: inset 0px 0px 2px hsla(0, 100%, 0%, 0.5);
 }
+
+a.fullscreen::after {
+    content: " ⤢";
+}

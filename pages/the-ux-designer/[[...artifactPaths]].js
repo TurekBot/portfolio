@@ -27,9 +27,9 @@ export default function TheUxDesigner() {
         <ArtifactCard
           parent={roleName}
           id={issueTrackerId}
-          thumbnail="/images/harmony.png"
+          thumbnail="/images/heuristic-evaluation.png"
           artifactTitle="Issue Tracker: Wireframes & Heuristic Evaluation"
-          hook={<span>Simple, yet colorful and profound.</span>}
+          hook={<span>Not as good as a user test, but better than nothing.</span>}
         />
         <ArtifactCard
           parent={roleName}

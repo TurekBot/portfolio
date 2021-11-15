@@ -2,6 +2,10 @@ import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
 export default function IssueTracker(props) {
+  
+
+  const wireframes = "/documents/Preliminary Wireframes-1.pdf";
+  const heuristicEvaluation = "/documents/Heuristic Evaluation.pdf";
   return (
     <>
       <ArtifactStory
@@ -49,6 +53,13 @@ export default function IssueTracker(props) {
           descriptive tooltip would appear to help them if they were confused
           about what that button did.
         </p>
+
+        <figure>
+        <iframe width="100%" height="300px" src={wireframes}/><figcaption>
+           The wireframe document. <a href={wireframes} target="_blank" class="fullscreen" >Fullscreen</a>
+          </figcaption>
+        </figure>
+
         <h3>Heuristic Evaluation</h3>
 
         <p>
@@ -69,6 +80,12 @@ export default function IssueTracker(props) {
           search that returned no results, was as easy as adding an explanatory
           message to the otherwise empty results table.
         </p>
+        <figure>
+        <iframe width="100%" height="300px" src={heuristicEvaluation}/>
+        <figcaption>
+           The heuristic evaluation document, organized by page and severity. <a href={heuristicEvaluation} target="_blank" class="fullscreen" >Fullscreen</a>
+          </figcaption>
+        </figure>
       </ArtifactStory>
       <SkillsNTechnologies></SkillsNTechnologies>
     </>
