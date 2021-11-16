@@ -259,8 +259,8 @@ figure.artifact-card figcaption {
 
 .see-more-button:hover {
     background-color: var(--accent-color);
-    color: white;
-    border: solid white 1px
+    color: black;
+    border: solid var(--accent-color) 1px;
 }
 
 .artifact-description {
