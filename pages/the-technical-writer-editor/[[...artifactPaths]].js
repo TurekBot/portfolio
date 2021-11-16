@@ -3,7 +3,7 @@ import ArtifactCard from "../../components/ArtifactCard";
 import { generateNextAndPrevious } from "../../components/RolePage";
 import SquareKnot from "../../components/technical-writer-editor/SquareKnot";
 import CsHandouts from "../../components/technical-writer-editor/CsHandouts";
-import Copymarking from "../../components/technical-writer-editor/Copymarking";
+import EditingTeamSport from "../../components/technical-writer-editor/EditingTeamSport";
 import CaseOfTheClipboard from "../../components/technical-writer-editor/CaseOfTheClipboard";
 
 export default function TheTechnicalWriterEditor() {
@@ -11,13 +11,13 @@ export default function TheTechnicalWriterEditor() {
 
   const squareKnotId = "square-knot";
   const csHandoutsId = "cs-handouts";
-  const copymarkingId = "copymarking";
+  const editingTeamSportId = "editing-team-sport";
   const caseOfTheClipboardId = "case-of-the-clipboard";
 
   const artifacts = new Array(
     <SquareKnot id={squareKnotId} />,
     <CsHandouts id={csHandoutsId} />,
-    <Copymarking id={copymarkingId} />,
+    <EditingTeamSport id={editingTeamSportId} />,
     <CaseOfTheClipboard id={caseOfTheClipboardId} />
   );
 
@@ -63,9 +63,9 @@ export default function TheTechnicalWriterEditor() {
         />
         <ArtifactCard
           parent={roleName}
-          id={copymarkingId}
+          id={editingTeamSportId}
           thumbnail="/images/copymarking.png"
-          artifactTitle="Copymarking"
+          artifactTitle="Editing: a Team Sport"
           hook={<span>Learning the language of the editor.</span>}
         />
         <ArtifactCard
