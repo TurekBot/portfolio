@@ -16,31 +16,33 @@ export default function IssueTracker(props) {
         <p>
           Sometimes “Uncle Larry’s Leather Goods” sends you brown belts—instead
           of the black ones you ordered (C’mon, Larry! This is the third time
-          this quarter.). I designed this program to help Sundance Catalog
-          Company resolve and track issues, like the one’s Larry creates, from
-          start to finish.{" "}
+          this quarter.). I <strong>designed</strong> this program to help
+          Sundance Catalog Company <strong>resolve</strong> and{" "}
+          <strong>track issues</strong>, like the ones Larry creates, from start
+          to finish.{" "}
         </p>
         <p>
-          This set of wireframes sketches out the visual layout and user
-          interaction of this custom issue tracker program.
+          The wireframes sketch out the visual layout and user interaction of
+          this custom issue tracker program.
         </p>
         <p>
-          These wireframes were a helpful prototype that I created to allow
-          potential users and stakeholders of the issue tracker to get a feel
-          for the basic idea behind the program; it was a tool for me in
-          figuring out the layout and interaction of the application, but it was
-          also a tool for them to help me discover and design for potential
-          hidden needs.
+          The wireframes were a helpful prototype that I created to allow
+          potential users and stakeholders of the issue tracker to{" "}
+          <strong>get a feel</strong> for the basic idea behind the program; it
+          was a tool for me in figuring out the layout and interaction of the
+          application, but it was also a tool for them to help me discover and
+          design for potential hidden needs.
         </p>
         <p>
-          I reused patterns from other design systems to make the program
-          familiar; one example of this is the circular floating action button
-          from Google's Material Design.{" "}
+          I <strong>reused patterns</strong> from other design systems to make
+          the program feel familiar; one example of this is the circular
+          floating action button from Google's Material Design.{" "}
         </p>
         <figure>
           <img src="/images/floating-action-button-tooltip.png" />
           <figcaption>
-            A picture of the floating action button in the finished application.
+            A picture of the floating action button and descriptive tooltip in
+            the finished application.
           </figcaption>
         </figure>
 
@@ -74,18 +76,21 @@ export default function IssueTracker(props) {
           heuristic evaluation.{" "}
         </p>
         <p>
-          With a list of commonly violated usability principles in hand, like
-          “recognition rather than recall” and “match between system and real
-          world,” I looked at my design with an “expert’s eye”.
+          With a list of commonly violated usability <strong>principles</strong>{" "}
+          in hand, like “recognition rather than recall” and “match between
+          system and real world,” I looked at my design with an “expert’s eye”.
         </p>
         <p>
           It was astounding how many of the principles I’d accidentally
-          violated. However, once I recognized the missteps, the principle
-          guided me to the solution. The salve to what might have been some
-          ambiguous icon-only buttons was an informative, just-in-time tooltip.
-          Resolving what might have become a confusion when the user made a
-          search that returned no results, was as easy as adding an explanatory
-          message to the otherwise empty results table.
+          violated. However, once I recognized the missteps, the principle{" "}
+          <strong>guided me</strong> to the <strong>solution</strong>.
+        </p>
+        <p>
+          The solution to what might have been some ambiguous icon-only buttons was
+          an informative, just-in-time tooltip. Resolving what might have become
+          a confusion when the user made a search that returned no results, was
+          as easy as adding an explanatory message to the otherwise empty
+          results table.
         </p>
         <figure>
           <iframe
@@ -112,10 +117,11 @@ export default function IssueTracker(props) {
         <li>Heuristic Evaluation</li>
         <li>Word Styles</li>
 
-
         <h4>Technologies</h4>
-        
-        <li><a href="https://balsamiq.com/wireframes/">Balsamiq</a></li>
+
+        <li>
+          <a href="https://balsamiq.com/wireframes/">Balsamiq</a>
+        </li>
         <li>Word</li>
       </SkillsNTechnologies>
     </>
