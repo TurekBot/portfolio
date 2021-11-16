@@ -19,18 +19,20 @@ export default function RegalJumpers(props) {
         </p>
         <p>
           After learning about and adopting one of these little finger kittens
-          myself, I made this poster intended to be put up in a{" "}
-          <strong>pet store</strong> selling jumping spiders. We all have this
-          irrational fear of spiders, but something about these little jumping
-          spiders seems to win people over. Just ask Bea the Jumping Spider,{" "}
+          myself, I made a poster intended to be put up in a{" "}
+          <strong>pet store</strong> selling jumping spiders. So many of us have an
+          irrational fear of spiders, yet something about these little jumping
+          spiders seems to win people over. Just ask the 888.8K followers of Bea the Jumping Spider;{" "}
           <a href={bea}>she’s Tik-Tok famous</a> and has cured many people’s
           arachnophobia. That’s the kind of magic I hoped to capture in this
           poster.
         </p>
         <p>
           As you can see, my <strong>first draft</strong> wasn’t very good. As
-          my instructor put it, “you might have to put your nose on the poster
-          just to read the print.” I was trying to draw the audience in and make
+          my instructor put it, <blockquote>
+            “You might have to put your nose on the poster
+            just to read the print.”
+          </blockquote> I was trying to draw the audience in and make
           them curious... They were probably just confused. I had missed the
           mark.
         </p>
@@ -43,13 +45,13 @@ export default function RegalJumpers(props) {
               src="/images/regal-jumpers-first-draft.png"
             />
           </a>
-          <figcaption>The first draft .</figcaption>
+          <figcaption>The first draft.</figcaption>
         </figure>
         <p>
-          However, I was determined, and despite visual design and the
-          principles and tools that go along with it being new to me, I dug in
-          and <strong>tried again</strong>. With each draft, it looked better
-          and with a lot of practice I found it getting easier and easier.
+          However, I was determined, and despite my unfamiliarity with visual
+          design and the principles and tools that go along with it, I{" "}
+          <strong>tried again</strong>. With each draft, it looked better and
+          with a lot of practice I found it getting easier and easier.
         </p>
         <p>
           I’m proud to present the final poster: I traced both spiders by hand
