@@ -115,7 +115,7 @@ export default function IssueTracker(props) {
 
         <h4>Technologies</h4>
         
-        <li>Balsamiq</li>
+        <li><a href="https://balsamiq.com/wireframes/">Balsamiq</a></li>
         <li>Word</li>
       </SkillsNTechnologies>
     </>

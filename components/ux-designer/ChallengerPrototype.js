@@ -67,7 +67,7 @@ export default function ChallengerPrototype(props) {
         <li>UI Design</li>
 
         <h4>Technologies</h4>
-        <li>Balsamiq</li>
+        <li><a href="https://balsamiq.com/wireframes/">Balsamiq</a></li>
       </SkillsNTechnologies>
     </>
   );
