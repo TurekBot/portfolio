@@ -2,7 +2,6 @@ import ArtifactStory from "../ArtifactStory";
 import SkillsNTechnologies from "../SkillsNTechnologies";
 
 export default function CaseOfTheClipboard(props) {
-
   return (
     <>
       <ArtifactStory
@@ -21,7 +20,7 @@ export default function CaseOfTheClipboard(props) {
         </p>
         <p>
           But occasionally, you stumble across a{" "}
-          <strong>real-life error</strong> in a system and other people can
+          <strong>real-life error</strong> in a system: other people can
           reproduce it on their computer, too. So it was with the case of the
           clipboard.
         </p>
@@ -30,7 +29,7 @@ export default function CaseOfTheClipboard(props) {
           <a href="/the-ux-designer/issue-tracker">
             an issue tracker for Sundance Catalog
           </a>{" "}
-          and I was just trying to allow the user to paste an image, when I
+          and I was just trying to allow the user to paste an image when I
           discovered that <strong>images</strong> coming from the clipboard got
           really <strong>messed up</strong>: their colors came out irreparably
           different shades than they went in. On a black background all was
@@ -38,7 +37,10 @@ export default function CaseOfTheClipboard(props) {
         </p>
         <figure>
           <img src="/images/clipboard-demo.gif" />
-          <figcaption></figcaption>
+          <figcaption>
+            A demonstration of how the image colors mistakenly change based on
+            the background color.
+          </figcaption>
         </figure>
         <p>
           Perhaps for my own sanity and satisfaction, I spent a long time{" "}
@@ -54,8 +56,8 @@ export default function CaseOfTheClipboard(props) {
         </p>
         <p>
           It was to my great satisfaction that many others found the same thing
-          I had. It was a bug. Many of them lent me their upvotes; one user left
-          his with praise saying,
+          I had. It <em>was</em> a bug. Many of them lent me their upvotes; one
+          user left <strong>his</strong> with <strong>praise</strong> saying,
           <blockquote>
             &ldquo;Upvoted for excellent research, good formatting, and possibly
             spotting out a bug. I wish more questions were written to this
@@ -63,21 +65,37 @@ export default function CaseOfTheClipboard(props) {
           </blockquote>
         </p>
         <p>
-          Few of the pieces I've written have brought me such joy and
-          satisfaction.
+          I was delighted. Having my efforts to sniff out and pin down this bug
+          validated brought me a great deal of satisfaction.
         </p>
       </ArtifactStory>
       <SkillsNTechnologies>
         <h4>Skills</h4>
+        <li>
+          <a href="https://www.iainstitute.org/what-is-ia#:~:text=how%20to%20arrange%20the%20parts%20of%20something%20to%20be%20understandable.">
+            Information Architecture
+          </a>
+        </li>
         <li>Debugging</li>
         <li>Concise Writing</li>
         <li>Visual Communication</li>
-        <li><a href="https://www.iainstitute.org/what-is-ia#:~:text=how%20to%20arrange%20the%20parts%20of%20something%20to%20be%20understandable.">Information Architecture</a></li>
-        
+
+        <li>Composing{" "}
+          <a href="https://stackoverflow.com/help/minimal-reproducible-example">
+            Minimal, Reproducible Examples
+          </a>
+        </li>
 
         <h4>Technologies</h4>
         <li>Animated GIFs</li>
-        <li><a href="https://dev.to/developer_anand/learn-basic-markdown-33nl">Markdown</a></li>
+        <li>
+          <a href="https://dev.to/developer_anand/learn-basic-markdown-33nl">
+            Markdown
+          </a>
+        </li>
+        <li>
+          <a href="https://openjfx.io/">JavaFX</a>
+        </li>
       </SkillsNTechnologies>
     </>
   );
