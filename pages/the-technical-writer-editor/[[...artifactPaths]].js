@@ -86,11 +86,11 @@ export default function TheTechnicalWriterEditor() {
         <ArtifactCard
           parent={roleName}
           id={plasmaPosterId}
-          thumbnail="/images/plasma-poster.png"
+          thumbnail="/images/plasma-poster-reveal.gif"
           artifactTitle="Plasma Poster Re-Do"
           hook={
             <span>
-              TODO
+              People don't read things; they scan things.
             </span>
           }
         />
