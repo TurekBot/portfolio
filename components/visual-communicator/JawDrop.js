@@ -15,6 +15,7 @@ export default function JawDrop(props) {
         nextArtifactLink={props.nextArtifactLink}
         previousArtifactLink={props.previousArtifactLink}
       >
+        <p>Something about movement really commands attention.</p>
         <p>
           I wrote and rewrote{" "}
           <a target="_blank" href="https://codepen.io/TurekBot/full/ZEEVyde">
@@ -23,8 +24,8 @@ export default function JawDrop(props) {
           to do just that: command attention. You only get so much space above
           the fold and to win people’s attention you need to work for it. This
           piece’s intent was to practice writing <strong>a good hook</strong>.
-          The goal was to get someone’s attention and then start them on a
-          journey they continue of their own accord.
+          The goal was to get someone’s attention well enough that they{" "}
+          <em>wanted</em> to keep reading.
         </p>
         <p>
           I intentionally made the animation play only once. If you missed it,
