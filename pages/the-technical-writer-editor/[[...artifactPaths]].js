@@ -4,6 +4,7 @@ import { generateNextAndPrevious } from "../../components/RolePage";
 import SquareKnot from "../../components/technical-writer-editor/SquareKnot";
 import CsHandouts from "../../components/technical-writer-editor/CsHandouts";
 import Copymarking from "../../components/technical-writer-editor/Copymarking";
+import CaseOfTheClipboard from "../../components/technical-writer-editor/CaseOfTheClipboard";
 
 export default function TheTechnicalWriterEditor() {
   const roleName = "Technical Writer & Editor";
@@ -11,11 +12,13 @@ export default function TheTechnicalWriterEditor() {
   const squareKnotId = "square-knot";
   const csHandoutsId = "cs-handouts";
   const copymarkingId = "copymarking";
+  const caseOfTheClipboardId = "case-of-the-clipboard";
 
   const artifacts = new Array(
     <SquareKnot id={squareKnotId} />,
     <CsHandouts id={csHandoutsId} />,
-    <Copymarking id={copymarkingId} />
+    <Copymarking id={copymarkingId} />,
+    <CaseOfTheClipboard id={caseOfTheClipboardId} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -27,7 +30,8 @@ export default function TheTechnicalWriterEditor() {
         intro={
           <>
             Four basic premises of writing: clarity, brevity, simplicity, and
-            humanity.<br/>
+            humanity.
+            <br />
             —William Zinsser
           </>
         }
@@ -38,7 +42,12 @@ export default function TheTechnicalWriterEditor() {
           id={csHandoutsId}
           thumbnail="/images/comparing-psp.gif"
           artifactTitle="CS Handouts: A Glow-Up"
-          hook={<span>Glow-Up: an incredible transformation </span>}
+          hook={
+            <span>
+              glow-up noun. /ɡloʊ ˌʌp/
+              <br />: an incredible transformation{" "}
+            </span>
+          }
         />
         <ArtifactCard
           parent={roleName}
@@ -58,6 +67,18 @@ export default function TheTechnicalWriterEditor() {
           thumbnail="/images/copymarking.png"
           artifactTitle="Copymarking"
           hook={<span>Learning the language of the editor.</span>}
+        />
+        <ArtifactCard
+          parent={roleName}
+          id={caseOfTheClipboardId}
+          thumbnail="/images/clipboard-demo.gif"
+          artifactTitle="The Case of the Clipboard"
+          hook={
+            <span>
+              When you stumble upon a bug, you think you’re going crazy—and you
+              usually are—but this time I really found one.
+            </span>
+          }
         />
       </RolePage>
     </>
