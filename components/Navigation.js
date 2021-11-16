@@ -53,8 +53,8 @@ export default function Navigation() {
         <span>👷‍♂️</span>
         <h3>Pardon the dust</h3>
         <p>
-          In the next few weeks up to graduation, I'll be piecing this portfolio
-          together. Sorry about any broken links, or unfinished pages.
+          I'm still putting the finishing touches on this portfolio. My apologies in advance for any broken links, or unfinished
+          pages.
         </p>
       </aside>
     </section>
