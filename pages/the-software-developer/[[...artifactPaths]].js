@@ -6,18 +6,21 @@ import AutoDash from "../../components/software-developer-artifacts/AutoDash";
 import Challenger from "../../components/software-developer-artifacts/Challeng.er";
 import Connect4 from "../../components/software-developer-artifacts/Connect4";
 import Knuckles from "../../components/software-developer-artifacts/Knuckles";
+import ThisWebsite from "../../components/software-developer-artifacts/ThisWebsite";
 
 export default function TheSoftwareDeveloper() {
   const roleName = "Software Developer";
 
   const knucklesId = "knuckles";
   const autoDashId = "auto-dash";
+  const thisWebsiteId = "this-website";
   const challengerId = "challeng.er";
   const connect4Id = "connect-4";
 
   const artifacts = new Array(
     <Knuckles id={knucklesId} />,
     <AutoDash id={autoDashId} />,
+    <ThisWebsite id={thisWebsiteId} />,
     <Challenger id={challengerId} />,
     <Connect4 id={connect4Id} />
   );
@@ -57,6 +60,17 @@ export default function TheSoftwareDeveloper() {
             <span>
               Em dashes should be easy to type—but they’re not. AutoDash fixes
               that.
+            </span>
+          }
+        />
+        <ArtifactCard
+          parent={roleName}
+          id={thisWebsiteId}
+          thumbnail="/images/this-website.svg"
+          artifactTitle="This Website"
+          hook={
+            <span>
+              Turns out, it's a <em>lot</em> of work. <br/>(But oh, the things I learned.)
             </span>
           }
         />
