@@ -5,6 +5,7 @@ import SquareKnot from "../../components/technical-writer-editor/SquareKnot";
 import CsHandouts from "../../components/technical-writer-editor/CsHandouts";
 import EditingTeamSport from "../../components/technical-writer-editor/EditingTeamSport";
 import CaseOfTheClipboard from "../../components/technical-writer-editor/CaseOfTheClipboard";
+import PlasmaPosterReDo from "../../components/technical-writer-editor/PlasmaPosterReDo";
 
 export default function TheTechnicalWriterEditor() {
   const roleName = "Technical Writer & Editor";
@@ -13,12 +14,14 @@ export default function TheTechnicalWriterEditor() {
   const csHandoutsId = "cs-handouts";
   const editingTeamSportId = "editing-team-sport";
   const caseOfTheClipboardId = "case-of-the-clipboard";
+  const plasmaPosterId = "plasma-poster-re-do";
 
   const artifacts = new Array(
     <SquareKnot id={squareKnotId} />,
     <CsHandouts id={csHandoutsId} />,
     <EditingTeamSport id={editingTeamSportId} />,
-    <CaseOfTheClipboard id={caseOfTheClipboardId} />
+    <CaseOfTheClipboard id={caseOfTheClipboardId} />,
+    <PlasmaPosterReDo id={plasmaPosterId} />,
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -77,6 +80,17 @@ export default function TheTechnicalWriterEditor() {
             <span>
               When you stumble upon a bug, you think you’re going crazy—and you
               usually are—but this time I really found one.
+            </span>
+          }
+        />
+        <ArtifactCard
+          parent={roleName}
+          id={plasmaPosterId}
+          thumbnail="/images/plasma-poster.png"
+          artifactTitle="Plasma Poster Re-Do"
+          hook={
+            <span>
+              TODO
             </span>
           }
         />
