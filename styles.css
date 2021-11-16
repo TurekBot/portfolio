@@ -289,6 +289,11 @@ figure.artifact-card figcaption {
 .next-button, .previous-button {
     padding: .5em;
     background-color: var(--accent-color);
+    border: solid transparent 1px;
+}
+
+.next-button:hover, .previous-button:hover {
+    border: solid black 1px;
 }
 
 .skills-n-technologies {
