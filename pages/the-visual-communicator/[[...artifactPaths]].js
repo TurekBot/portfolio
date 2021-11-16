@@ -30,9 +30,7 @@ export default function TheVisualCommunicator() {
         pageTitle={roleName}
         intro={
           <>
-            My mantra: CRAP, CRAP, CRAP. (Contrast, Repetition, Alignment,
-            Proximity—what were <em>you</em> thinking? 😄)
-            {/* TODO: Revise! 😂 */}
+            My mantra: Contrast, Repetition, Alignment, Proximity
           </>
         }
         artifacts={artifacts}

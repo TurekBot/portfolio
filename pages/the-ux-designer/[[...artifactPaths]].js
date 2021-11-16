@@ -15,12 +15,11 @@ export default function TheUxDesigner() {
   const challengerPrototypeId = "challeng.er-prototype";
   const usableFormsId = "usable-forms";
 
-
   const artifacts = new Array(
     <IssueTracker id={issueTrackerId} />,
     <MrPoorCollegeStudent id={mrPoorCollegeStudentId} />,
     <ChallengerPrototype id={challengerPrototypeId} />,
-    <UsableForms id={usableFormsId} />,
+    <UsableForms id={usableFormsId} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -29,7 +28,13 @@ export default function TheUxDesigner() {
     <>
       <RolePage
         pageTitle={roleName}
-        intro={<>{/* TODO */}</>}
+        intro={
+          <>
+            Supposing is good, but finding out is better.
+            <br />
+            —Mark Twain
+          </>
+        }
         artifacts={artifacts}
       >
         <ArtifactCard
@@ -61,7 +66,8 @@ export default function TheUxDesigner() {
           hook={
             <span>
               “If a picture is worth a thousand words, a prototype is worth a
-              thousand meetings” <br/>―IDEO.org
+              thousand meetings” <br />
+              ―IDEO.org
             </span>
           }
         />
@@ -70,11 +76,7 @@ export default function TheUxDesigner() {
           id={usableFormsId}
           thumbnail="/images/usability-test-forms.gif"
           artifactTitle="Usable Usability Test Forms"
-          hook={
-            <span>
-              Very meta.
-            </span>
-          }
+          hook={<span>Very meta.</span>}
         />
       </RolePage>
     </>
