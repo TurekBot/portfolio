@@ -39,7 +39,7 @@ export default function Challenger(props) {
           <a href="/the-ux-designer/challeng.er-prototype">
             click-through prototype
           </a>{" "}
-          of our app.)
+          of our app; it's included elsewhere in this portfolio.)
         </p>
         <h3>All Diagrams</h3>
 
