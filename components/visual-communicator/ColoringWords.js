@@ -28,7 +28,7 @@ export default function ColoringWords(props) {
         </p>
         <p>
           In most of my studies, I've used more words than images, but in this
-          piece, I successfully composed simple colors, words, fonts, and lines
+          piece, I successfully composed simple colors, words, and lines
           into something more than the sum of their parts.
         </p>
       </ArtifactStory>
