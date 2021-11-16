@@ -7,15 +7,16 @@ export default function Knuckles(props) {
   return (
     <>
       <ArtifactStory
-        title="An Agile Experience: Knuckle's Dojo"
+        title="Agile Team: Knuckle's Dojo Scheduler"
         id={props.id}
         nextArtifactLink={props.nextArtifactLink}
         previousArtifactLink={props.previousArtifactLink}
       >
         <p>
-          Though my degree is in UX and Technical Communication, my few years of
-          experience in the industry convinced a few professors to allow me to
-          jump in to their upper-level software engineering classes.
+          Though my degree is in UX and Technical Communication, my few years of{" "}
+          <strong>experience</strong> in the <strong>software industry</strong> convinced
+          a few professors to allow me to jump in to their upper-level software
+          engineering classes.
         </p>
 
         <p>
@@ -31,14 +32,14 @@ export default function Knuckles(props) {
         </figure>
         <p>
           We learned how to use Git and GitHub to collaborate as a team. After
-          meeting with our customer and understanding what they wanted, we met
-          as a team and broke the features down into managable sections that
-          would serve a user (called user stories). We established{" "}
+          meeting with our customer and understanding what they wanted, our team
+          met and broke the features down into managable sections that would
+          serve a specific user (called user stories). We established{" "}
           <strong>quality standards</strong> regarding unit tests, code style,
           and bad code tolerances.
         </p>
         <p>
-          Over the next few weeks, we worked tirelessly. As we worked, each user
+          Over the next few weeks, we worked tirelessly. Each user
           story made its way from "To Do" to "In Progress" to "In Review" to
           "Finished". Every two weeks, we presented our progress to the customer
           and listened carefully to their feedback.
@@ -47,7 +48,7 @@ export default function Knuckles(props) {
           The <strong>contribution I'm proudest of</strong> was the class
           scheduling section. I leveraged my experience with JavaFX (the desktop
           application platform) to bring and adapt a fully-fledged calendaring
-          system to the app. My senseis Leonardo and Michelangelo would be
+          system to the app. My mentors, Leonardo and Michelangelo, would be
           proud, I'm sure.
         </p>
         <figure>
