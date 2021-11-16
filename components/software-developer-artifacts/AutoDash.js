@@ -25,8 +25,9 @@ export default function AutoDash(props) {
             the "em dash"
           </a>
           —so named because it's the width of the letter 'm'. We often
-          emphatically <strong>interrupt</strong> ourselves or <strong>change thoughts</strong> when speaking;
-          that's what the em dash is for.
+          emphatically <strong>interrupt</strong> ourselves or{" "}
+          <strong>change thoughts</strong> when speaking; that's what the em
+          dash is for.
         </p>
         <p>
           Without AutoDash, the most common way to type an em dash on Windows
@@ -64,8 +65,12 @@ export default function AutoDash(props) {
         <li>User Experience Design</li>
 
         <h4>Technologies</h4>
-        <li>AutoHotkey</li>
-        <li>Version Control</li>
+        <li>
+          <a href="https://www.autohotkey.com/">AutoHotkey</a>
+        </li>
+        <li>
+          <a href="https://youtu.be/2ReR1YJrNOM">Git</a>
+        </li>
       </SkillsNTechnologies>
     </>
   );

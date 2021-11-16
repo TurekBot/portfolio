@@ -102,8 +102,8 @@ export default function Connect4(props) {
             Gradle
           </a>
         </li>
-        <li>Git</li>
-        <li>IntelliJ IDEA</li>
+        <li><a href="https://youtu.be/2ReR1YJrNOM">Git</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/IntelliJ_IDEA">IntelliJ IDEA</a></li>
       </SkillsNTechnologies>
     </>
   );

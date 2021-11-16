@@ -72,12 +72,12 @@ export default function CaseOfTheClipboard(props) {
         <li>Debugging</li>
         <li>Concise Writing</li>
         <li>Visual Communication</li>
-        <li>Information Architecture</li>
+        <li><a href="https://www.iainstitute.org/what-is-ia#:~:text=how%20to%20arrange%20the%20parts%20of%20something%20to%20be%20understandable.">Information Architecture</a></li>
         
 
         <h4>Technologies</h4>
         <li>Animated GIFs</li>
-        <li>Markdown</li>
+        <li><a href="https://dev.to/developer_anand/learn-basic-markdown-33nl">Markdown</a></li>
       </SkillsNTechnologies>
     </>
   );

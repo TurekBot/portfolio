@@ -56,7 +56,7 @@ export default function Copymarking(props) {
       <SkillsNTechnologies>
         <h4>Skills</h4>
         <li>Copymarking</li>
-        <li>Copyediting</li>
+        <li>Copy Editing</li>
         <li>Conventions</li>
         <li>Grammar</li>
         <li>Punctuation</li>

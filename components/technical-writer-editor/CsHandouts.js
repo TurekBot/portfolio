@@ -119,7 +119,7 @@ export default function CsHandouts(props) {
         <li>Copy Editing</li>
         <li>UX Design</li>
         <li>Typography</li>
-        <li>Information Architecture</li>
+        <li><a href="https://www.iainstitute.org/what-is-ia#:~:text=how%20to%20arrange%20the%20parts%20of%20something%20to%20be%20understandable.">Information Architecture</a></li>
         <li>Style Guide Adherence</li>
         
 

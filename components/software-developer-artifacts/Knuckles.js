@@ -14,9 +14,9 @@ export default function Knuckles(props) {
       >
         <p>
           Though my degree is in UX and Technical Communication, my few years of{" "}
-          <strong>experience</strong> in the <strong>software industry</strong> convinced
-          a few professors to allow me to jump in to their upper-level software
-          engineering classes.
+          <strong>experience</strong> in the <strong>software industry</strong>{" "}
+          convinced a few professors to allow me to jump in to their upper-level
+          software engineering classes.
         </p>
 
         <p>
@@ -39,10 +39,10 @@ export default function Knuckles(props) {
           and bad code tolerances.
         </p>
         <p>
-          Over the next few weeks, we worked tirelessly. Each user
-          story made its way from "To Do" to "In Progress" to "In Review" to
-          "Finished". Every two weeks, we presented our progress to the customer
-          and listened carefully to their feedback.
+          Over the next few weeks, we worked tirelessly. Each user story made
+          its way from "To Do" to "In Progress" to "In Review" to "Finished".
+          Every two weeks, we presented our progress to the customer and
+          listened carefully to their feedback.
         </p>
         <p>
           The <strong>contribution I'm proudest of</strong> was the class
@@ -83,14 +83,29 @@ export default function Knuckles(props) {
         <li>Interaction Design</li>
 
         <h4>Technologies</h4>
-        <li>GitHub</li>
-        <li>Git</li>
-        <li>JavaFX (New UI Framework)</li>
-        <li>Java Swing (Old UI Framework)</li>
+        <li>
+          <a href="https://digital.gov/resources/an-introduction-github/">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://youtu.be/2ReR1YJrNOM">Git</a>
+        </li>
+        <li>
+          <a href="https://openjfx.io/">JavaFX</a> (New UI Framework)
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Swing_(Java)">Java Swing</a>{" "}
+          (Old UI Framework)
+        </li>
 
-        <li>Travis CI</li>
+        <li><a href="https://en.wikipedia.org/wiki/Travis_CI">Travis CI</a></li>
 
-        <li>Gradle</li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Gradle#:~:text=Gradle%20is%20a%20build%20automation%20tool&text=compilation%20and%20packaging%20to%20testing%2C%20deployment%2C%20and%20publishing">
+            Gradle
+          </a>
+        </li>
       </SkillsNTechnologies>
     </>
   );

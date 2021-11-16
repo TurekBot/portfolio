@@ -63,7 +63,7 @@ export default function Challenger(props) {
         <h4>Skills</h4>
 
         <li>
-          UML
+          <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">UML</a>
           <ul>
             <li>Class Diagrams</li>
             <li>Object Diagrams</li>
@@ -74,7 +74,7 @@ export default function Challenger(props) {
             <li>Communication Diagrams</li>
           </ul>
           <li>Operational Patterns</li>
-          <li>Zed Notation</li>
+          <li><a href="https://en.wikipedia.org/wiki/Z_notation">Zed Notation</a></li>
           <li>Domain Modeling</li>
           <li>Implementation Modeling</li>
           <h4>Technologies</h4>
@@ -82,7 +82,7 @@ export default function Challenger(props) {
         <li>
           <a href="https://astah.net/">Astah™</a>
         </li>
-        <li>LaTeX</li>
+        <li><a href="https://www.latex-project.org/about/">LaTeX</a></li>
         <li>Word</li>
       </SkillsNTechnologies>
     </>
