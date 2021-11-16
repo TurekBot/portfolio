@@ -15,7 +15,7 @@ export default function TheTechnicalWriterEditor() {
   const artifacts = new Array(
     <SquareKnot id={squareKnotId} />,
     <CsHandouts id={csHandoutsId} />,
-    <Copymarking id={copymarkingId}/>,
+    <Copymarking id={copymarkingId} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -24,7 +24,13 @@ export default function TheTechnicalWriterEditor() {
     <>
       <RolePage
         pageTitle={roleName}
-        intro={<>{/* TODO */}</>}
+        intro={
+          <>
+            Four basic premises of writing: clarity, brevity, simplicity, and
+            humanity.<br/>
+            —William Zinsser
+          </>
+        }
         artifacts={artifacts}
       >
         <ArtifactCard
@@ -51,11 +57,7 @@ export default function TheTechnicalWriterEditor() {
           id={copymarkingId}
           thumbnail="/images/copymarking.png"
           artifactTitle="Copymarking"
-          hook={
-            <span>
-              Learning the language of the editor.
-            </span>
-          }
+          hook={<span>Learning the language of the editor.</span>}
         />
       </RolePage>
     </>
