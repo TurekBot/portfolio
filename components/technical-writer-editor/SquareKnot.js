@@ -51,7 +51,7 @@ export default function SquareKnot(props) {
           reference pages.
         </p>
         <p>
-          My go-to solution for schoolwork is to make it interesting and
+          My go-to solution for <strong>schoolwork</strong> is to make it <strong>interesting</strong> and
           fun&mdash;usually by making it <em>mine</em>; by playing around or
           making it about something <em>I&rsquo;m</em> interested in. When
           I&rsquo;m able to keep this play time-bound, it almost always works
@@ -66,7 +66,7 @@ export default function SquareKnot(props) {
         <li>Simple Instructions</li>
         <li>Visual Communication</li>
         <li>Web Design</li>
-        <li>Google-Fu</li>
+        <li><a href="https://english.stackexchange.com/a/19973/333583">Google-Fu</a></li>
 
         <h4>Technologies</h4>
         <li>Javascript</li>
