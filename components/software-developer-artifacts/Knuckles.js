@@ -14,7 +14,7 @@ export default function Knuckles(props) {
       >
         <p>
           Though my degree is in UX and Technical Communication, my few years of{" "}
-          <strong>experience</strong> in the <strong>software industry</strong>{" "}
+          <b>experience</b> in the <b>software industry</b>{" "}
           convinced a few professors to allow me to jump in to their upper-level
           software engineering classes.
         </p>
@@ -23,7 +23,7 @@ export default function Knuckles(props) {
           Everyone split into agile teams. The task was to turn an old crusty
           piece of software, named <a href={memoranda}>Memoranda</a>, into
           something useful. Our customer needed us to turn it into a{" "}
-          <strong>class scheduling software</strong> for the local martial arts
+          <b>class scheduling software</b> for the local martial arts
           dojo.
         </p>
         <figure id="memoranda">
@@ -35,7 +35,7 @@ export default function Knuckles(props) {
           meeting with our customer and understanding what they wanted, our team
           met and broke the features down into managable sections that would
           serve a specific user (called user stories). We established{" "}
-          <strong>quality standards</strong> regarding unit tests, code style,
+          <b>quality standards</b> regarding unit tests, code style,
           and bad code tolerances.
         </p>
         <p>
@@ -45,7 +45,7 @@ export default function Knuckles(props) {
           listened carefully to their feedback.
         </p>
         <p>
-          The <strong>contribution I'm proudest of</strong> was the class
+          The <b>contribution I'm proudest of</b> was the class
           scheduling section. I leveraged my experience with JavaFX (the desktop
           application platform) to bring and adapt a fully-fledged calendaring
           system to the app. My mentors, Leonardo and Michelangelo, would be

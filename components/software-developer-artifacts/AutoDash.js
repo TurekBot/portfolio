@@ -12,7 +12,7 @@ export default function AutoDash(props) {
       >
         <p>
           Just type “ - ” (space, hyphen, space) and shazam: “ — ” an automatic{" "}
-          <strong>em dash</strong>.
+          <b>em dash</b>.
         </p>
         <img
           alt="A quick demo of how a hyphen turns into a dash as you type it."
@@ -20,13 +20,13 @@ export default function AutoDash(props) {
         />
         <p>
           I'm a particular fan of the often spoken, but{" "}
-          <strong>less often written</strong>, punctuation mark called{" "}
+          <b>less often written</b>, punctuation mark called{" "}
           <a href="https://www.thepunctuationguide.com/em-dash.html">
             the "em dash"
           </a>
           —so named because it's the width of the letter 'm'. We often
-          emphatically <strong>interrupt</strong> ourselves or{" "}
-          <strong>change thoughts</strong> when speaking; that's what the em
+          emphatically <b>interrupt</b> ourselves or{" "}
+          <b>change thoughts</b> when speaking; that's what the em
           dash is for.
         </p>
         <p>

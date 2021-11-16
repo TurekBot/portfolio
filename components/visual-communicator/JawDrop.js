@@ -23,7 +23,7 @@ export default function JawDrop(props) {
           </a>{" "}
           to do just that: command attention. You only get so much space above
           the fold and to win people’s attention you need to work for it. This
-          piece’s intent was to practice writing <strong>a good hook</strong>.
+          piece’s intent was to practice writing <b>a good hook</b>.
           The goal was to get someone’s attention well enough that they{" "}
           <em>wanted</em> to keep reading.
         </p>

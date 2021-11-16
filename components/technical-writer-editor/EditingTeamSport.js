@@ -18,10 +18,10 @@ export default function EditingTeamSport(props) {
         </p>
         <p>
           In this assignment I applied my knowledge of{" "}
-          <strong>literary conventions</strong> to improve an essay. I took a
+          <b>literary conventions</b> to improve an essay. I took a
           red pen and used special{" "}
           <a href="https://www.wordy.com/writers-workshop/proofreading-marks-symbols/">
-            <strong>proofreading symbols</strong>
+            <b>proofreading symbols</b>
           </a>{" "}
           to indicate various changes that needed to be made to the essay. Some
           changes were presentational in nature, like the way a paragraph was
@@ -32,18 +32,18 @@ export default function EditingTeamSport(props) {
         </p>
         <p>
           Learning this new-to-me approach involving the red marks of the editor
-          prepared me to <strong>collaborate</strong> with other literary
+          prepared me to <b>collaborate</b> with other literary
           professionals.
         </p>
         <p>
           A key takeaway I got from this assignment and class was the role of an
           editor as a{" "}
-          <strong>
+          <b>
             <em>teammate</em>
-          </strong>{" "}
-          instead of a <strong>critic</strong>. It's crucial that editors are
+          </b>{" "}
+          instead of a <b>critic</b>. It's crucial that editors are
           able to convey to writers that they two are on the{" "}
-          <strong>same team</strong>; otherwise, editors run the risk of their
+          <b>same team</b>; otherwise, editors run the risk of their
           writers feeling slighted by their corrections.
         </p>
         <figure>

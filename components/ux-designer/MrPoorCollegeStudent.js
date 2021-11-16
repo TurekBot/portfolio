@@ -13,19 +13,19 @@ export default function MrPoorCollegeStudent(props) {
         previousArtifactLink={props.previousArtifactLink}
       >
         <p>
-          Personas shine when they’re <strong>just true enough</strong>—I know this one is true
+          Personas shine when they’re <b>just true enough</b>—I know this one is true
           enough because I put a part of my poor college self in it.{" "}
         </p>
         <p>
           Cereal isn’t <em>that</em> bad with water instead of milk. I know, because the
           quote, “I don’t want anyone to know, but sometimes, when I’m out of
-          milk, I put water in my cereal,” is based on <strong>my own life</strong> experience as
+          milk, I put water in my cereal,” is based on <b>my own life</b> experience as
           a poor college student.{" "}
         </p>
         <p>
           Without knowing it’s origin, my teammate commented to me that the
           quote was the best part of the persona; that it felt{" "}
-          <strong>“so real”</strong>. I guess that’s what you call validation.
+          <b>“so real”</b>. I guess that’s what you call validation.
         </p>
 
         <figure>

@@ -20,8 +20,8 @@ export default function Challenger(props) {
         <p>
           Though we never did write the code for this app in this software
           engineering class, we did everything but that: we{" "}
-          <strong>designed</strong> the structure, behavior, and interaction of{" "}
-          <strong>every component</strong>—but we did it using diagrams.
+          <b>designed</b> the structure, behavior, and interaction of{" "}
+          <b>every component</b>—but we did it using diagrams.
         </p>
         <p>
           Unified Modeling Language (UML) was a good fit for visually fleshing

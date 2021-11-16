@@ -26,16 +26,16 @@ export default function Connect4(props) {
           The technology that defined the user interface is a Desktop
           Application Platform called <a href="https://openjfx.io/">JavaFX</a>. It allows the application to
           listen for actions that the user takes and respond appropriately; this
-          general strategy is called <strong>event-driven programming</strong>{" "}
+          general strategy is called <b>event-driven programming</b>{" "}
           and is a good choice for Graphical User Interfaces where the user
           could click anywhere at any time.
         </p>
         <p>
-          One thing <strong>I learned</strong> while creating this program, was
+          One thing <b>I learned</b> while creating this program, was
           to avoid breaking the Law of Demeter—a guideline in programming to
           help you keep things from getting difficult to untangle; it says,
           “don't talk to strangers, only people (objects) you know.” My program
-          worked, but I often broke the <strong>Law of Demeter</strong> by
+          worked, but I often broke the <b>Law of Demeter</b> by
           asking other objects to "let me talk to [their] friends."
         </p>
         <p>
@@ -46,7 +46,7 @@ export default function Connect4(props) {
           game, here.
         </p>
         <p>
-          If you'd rather just watch, here's a <strong>quick demo</strong> of
+          If you'd rather just watch, here's a <b>quick demo</b> of
           the text-based and then the graphical version of the game.
         </p>
         <h4>Text-based Version</h4>

@@ -20,7 +20,7 @@ export default function CaseOfTheClipboard(props) {
         </p>
         <p>
           But occasionally, you stumble across a{" "}
-          <strong>real-life error</strong> in a system: other people can
+          <b>real-life error</b> in a system: other people can
           reproduce it on their computer, too. So it was with the case of the
           clipboard.
         </p>
@@ -30,8 +30,8 @@ export default function CaseOfTheClipboard(props) {
             an issue tracker for Sundance Catalog
           </a>{" "}
           and I was just trying to allow the user to paste an image when I
-          discovered that <strong>images</strong> coming from the clipboard got
-          really <strong>messed up</strong>: their colors came out irreparably
+          discovered that <b>images</b> coming from the clipboard got
+          really <b>messed up</b>: their colors came out irreparably
           different shades than they went in. On a black background all was
           fine, but not so with any other color.
         </p>
@@ -44,9 +44,9 @@ export default function CaseOfTheClipboard(props) {
         </figure>
         <p>
           Perhaps for my own sanity and satisfaction, I spent a long time{" "}
-          <strong>tracking down clues</strong> and investigating exactly under
+          <b>tracking down clues</b> and investigating exactly under
           what circumstances this bug happened. I made a demo other people could{" "}
-          <strong>try themselves</strong>. I recorded an animated gif, concisely
+          <b>try themselves</b>. I recorded an animated gif, concisely
           exposing the bug&rsquo;s behavior. Then I edited all my research down
           into{" "}
           <a href="https://stackoverflow.com/q/54995198/5432315">
@@ -57,7 +57,7 @@ export default function CaseOfTheClipboard(props) {
         <p>
           It was to my great satisfaction that many others found the same thing
           I had. It <em>was</em> a bug. Many of them lent me their upvotes; one
-          user left <strong>his</strong> with <strong>praise</strong> saying,
+          user left <b>his</b> with <b>praise</b> saying,
           <blockquote>
             &ldquo;Upvoted for excellent research, good formatting, and possibly
             spotting out a bug. I wish more questions were written to this

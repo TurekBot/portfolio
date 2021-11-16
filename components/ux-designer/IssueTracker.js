@@ -16,9 +16,9 @@ export default function IssueTracker(props) {
         <p>
           Sometimes “Uncle Larry’s Leather Goods” sends you brown belts—instead
           of the black ones you ordered (C’mon, Larry! This is the third time
-          this quarter.). I <strong>designed</strong> this program to help
-          Sundance Catalog Company <strong>resolve</strong> and{" "}
-          <strong>track issues</strong>, like the ones Larry creates, from start
+          this quarter.). I <b>designed</b> this program to help
+          Sundance Catalog Company <b>resolve</b> and{" "}
+          <b>track issues</b>, like the ones Larry creates, from start
           to finish.{" "}
         </p>
         <p>
@@ -28,13 +28,13 @@ export default function IssueTracker(props) {
         <p>
           The wireframes were a helpful prototype that I created to allow
           potential users and stakeholders of the issue tracker to{" "}
-          <strong>get a feel</strong> for the basic idea behind the program; it
+          <b>get a feel</b> for the basic idea behind the program; it
           was a tool for me in figuring out the layout and interaction of the
           application, but it was also a tool for them to help me discover and
           design for potential hidden needs.
         </p>
         <p>
-          I <strong>reused patterns</strong> from other design systems to make
+          I <b>reused patterns</b> from other design systems to make
           the program feel familiar; one example of this is the circular
           floating action button from Google's Material Design.{" "}
         </p>
@@ -76,14 +76,14 @@ export default function IssueTracker(props) {
           heuristic evaluation.{" "}
         </p>
         <p>
-          With a list of commonly violated usability <strong>principles</strong>{" "}
+          With a list of commonly violated usability <b>principles</b>{" "}
           in hand, like “recognition rather than recall” and “match between
           system and real world,” I looked at my design with an “expert’s eye”.
         </p>
         <p>
           It was astounding how many of the principles I’d accidentally
           violated. However, once I recognized the missteps, the principle{" "}
-          <strong>guided me</strong> to the <strong>solution</strong>.
+          <b>guided me</b> to the <b>solution</b>.
         </p>
         <p>
           The solution to what might have been some ambiguous icon-only buttons was

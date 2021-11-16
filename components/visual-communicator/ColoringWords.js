@@ -17,14 +17,14 @@ export default function ColoringWords(props) {
         />
         <p>
           The intent of this piece was to use the principles of graphic design
-          to <strong>bring feeling</strong> to the words. In response to that
+          to <b>bring feeling</b> to the words. In response to that
           need, I kept things simple, yet colorful and profound.
         </p>
 
         <p>
           I drew on the common struggle humans have of getting along; I turned
-          the struggle on its head by <strong>reframing differences</strong> as{" "}
-          the thing that <strong>"makes the music".</strong>{" "}
+          the struggle on its head by <b>reframing differences</b> as{" "}
+          the thing that <b>"makes the music".</b>{" "}
         </p>
         <p>
           In most of my studies, I've used more words than images, but in this

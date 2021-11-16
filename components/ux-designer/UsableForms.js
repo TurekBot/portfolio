@@ -21,7 +21,7 @@ export default function UsableForms(props) {
             response
           </li>
           <li>
-            They <strong>couldn't mess up</strong> the instructions while
+            They <b>couldn't mess up</b> the instructions while
             responding
           </li>
           <li>
@@ -33,14 +33,14 @@ export default function UsableForms(props) {
         <ul>
           <li>
             Once you have a bunch of filled PDFs, Adobe lets you easily{" "}
-            <strong>convert</strong> the filled forms into a{" "}
-            <strong>spreadsheet</strong>. This made the analysis of the
+            <b>convert</b> the filled forms into a{" "}
+            <b>spreadsheet</b>. This made the analysis of the
             quantitative parts of the research much easier.
           </li>
           <li>
-            The PDFs allowed the team to <strong>avoid</strong> copy-and-pasting
+            The PDFs allowed the team to <b>avoid</b> copy-and-pasting
             the information from the forms to the spreadsheet which saved us
-            time and <strong>potential errors</strong>.
+            time and <b>potential errors</b>.
           </li>
           <li>
             The PDFs made our efforts consistent and facilitated our

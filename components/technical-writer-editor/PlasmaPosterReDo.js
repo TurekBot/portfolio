@@ -26,7 +26,7 @@ export default function PlasmaPosterReDo(props) {
         </p>
         <p>
           During one of the many hours I spent in the Plasma Donation Center, I
-          looked up from my chair and saw <strong>a poster</strong> from across
+          looked up from my chair and saw <b>a poster</b> from across
           the room.&nbsp; Once I got up close and looked it up and down a few
           times, I discovered what it was trying to convey: a promotion for
           bringing in new donors.
@@ -46,11 +46,11 @@ export default function PlasmaPosterReDo(props) {
           </figcaption>
         </figure>
         <p>
-          To hone my skills, I took on the task of <strong>redesigning</strong>{" "}
+          To hone my skills, I took on the task of <b>redesigning</b>{" "}
           the poster to be simpler and easier to understand{" "}
-          <strong>at a glance</strong>. The emblazoned &ldquo;Biotest Plasma
+          <b>at a glance</b>. The emblazoned &ldquo;Biotest Plasma
           Center&rdquo; and prominent dollar amounts caught the eye with{" "}
-          <strong>contrast</strong> and repetition. Cleanly aligned and
+          <b>contrast</b> and repetition. Cleanly aligned and
           positioned text left the meaning unmistakable.
         </p>
         <figure>

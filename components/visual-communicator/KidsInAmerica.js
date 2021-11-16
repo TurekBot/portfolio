@@ -46,7 +46,7 @@ export default function KidsInAmerica(props) {
           realized that that wasn't a fair comparison because of course the
           states with bigger populations would have more children: California
           was lit up like a Christmas tree. To make the state-by-state
-          comparison fair, <strong>I controlled for population</strong>; this
+          comparison fair, <b>I controlled for population</b>; this
           left me with a map that showed not the number of children, but the
           proportion of children (to adults).
         </p>
@@ -55,7 +55,7 @@ export default function KidsInAmerica(props) {
           Illustrator to give it some careful final touches. I gave it a modern
           font and added a call-out that elaborated on the most salient piece of
           the data: Utah. When controlled for population,{" "}
-          <strong>Utah pops right out</strong> as the leader by a huge margin.
+          <b>Utah pops right out</b> as the leader by a huge margin.
           Having grown up in Utah, I succinctly offered some speculation as to
           why this might be, but I also noted that the data does not mean this
           necessarily.
