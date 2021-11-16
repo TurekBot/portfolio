@@ -15,8 +15,9 @@ export default function KidsInAmerica(props) {
             “🎶We're the kids, we're the kids in America🎵”
           </a>{" "}
           Ahem, I mean they’re the kids in America. (In case you’re lost, that
-          line is from the Jimmy Neutron movie back in 2001. It was a classic
-          for my generation and this song has stuck with me ever since.)
+          line is from a popular song; I heard it first in the Jimmy Neutron
+          movie back in 2001. It was a classic for my generation and this song
+          has stuck with me ever since.)
         </p>
         <p>
           This map is the result of one of my first dives into data
@@ -62,12 +63,15 @@ export default function KidsInAmerica(props) {
       </ArtifactStory>
       <SkillsNTechnologies>
         <h4>Skills</h4>
+        <li>Data Crunching</li>
         <li>Data Visualization</li>
 
         <h4>Technologies</h4>
         <li>Adobe Illustrator</li>
         <li>The R Programming Language</li>
         <li>ggplot2</li>
+        <li>CSV</li>
+
       </SkillsNTechnologies>
     </>
   );

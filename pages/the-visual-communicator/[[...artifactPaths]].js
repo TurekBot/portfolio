@@ -28,11 +28,7 @@ export default function TheVisualCommunicator() {
     <>
       <RolePage
         pageTitle={roleName}
-        intro={
-          <>
-            My mantra: Contrast, Repetition, Alignment, Proximity
-          </>
-        }
+        intro={<>My mantra: Contrast, Repetition, Alignment, Proximity</>}
         artifacts={artifacts}
       >
         <ArtifactCard
@@ -61,13 +57,8 @@ export default function TheVisualCommunicator() {
           artifactTitle="Kids in America"
           hook={
             <span>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/watch?v=qcbUpz3oaSc"
-              >
-                “🎶We're the kids, we're the kids in America🎵”
-              </a>{" "}
-              Ahem, I mean <em>they’re</em> the kids in America.
+              “🎶We're the kids, we're the kids in America🎵” Ahem, I mean{" "}
+              <em>they’re</em> the kids in America.
             </span>
           }
         />
