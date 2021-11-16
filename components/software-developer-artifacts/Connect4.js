@@ -17,28 +17,26 @@ export default function Connect4(props) {
         <p>
           It would have been enough to just have the game pieces appear
           instantaneously in place, but, having had experience with the
-          graphical platform before, I wanted to go above and beyond and
+          application platform before, I wanted to go above and beyond and
           replicate the movement of the pieces in real life: them dropping and
           bouncing into the board.
           <img id="connect-4" src="/images/connect-4.gif" />
         </p>
         <p>
           The technology that defined the user interface is a Desktop
-          Application Platform called JavaFX. It allows the application to
+          Application Platform called <a href="https://openjfx.io/">JavaFX</a>. It allows the application to
           listen for actions that the user takes and respond appropriately; this
-          general strategy is called event-driven programming and is a good
-          choice for Graphical User Interfaces where the user could click
-          anywhere at any time. For the text-based version of this game, a more
-          procedural, step-by-step approach was taken because the user could
-          only ever give one specific input at a time.{" "}
+          general strategy is called <strong>event-driven programming</strong>{" "}
+          and is a good choice for Graphical User Interfaces where the user
+          could click anywhere at any time.
         </p>
         <p>
-          One thing I learned while creating this program, was to avoid breaking
-          the Law of Demeter—a guideline in programming to help you keep things
-          from getting difficult to untangle; it says, “don't talk to strangers,
-          only people (objects) you know.” My program worked, but I often broke
-          the Law of Demeter by asking other objects to "let me talk to [their]
-          friends."
+          One thing <strong>I learned</strong> while creating this program, was
+          to avoid breaking the Law of Demeter—a guideline in programming to
+          help you keep things from getting difficult to untangle; it says,
+          “don't talk to strangers, only people (objects) you know.” My program
+          worked, but I often broke the <strong>Law of Demeter</strong> by
+          asking other objects to "let me talk to [their] friends."
         </p>
         <p>
           Wanna try the game yourself? Download my{" "}
@@ -48,28 +46,44 @@ export default function Connect4(props) {
           game, here.
         </p>
         <p>
-          If you'd rather just watch, here's a quick demo of the text-based and
-          then the graphical version of the game.
+          If you'd rather just watch, here's a <strong>quick demo</strong> of
+          the text-based and then the graphical version of the game.
         </p>
         <h4>Text-based Version</h4>
 
-        <div className="embed-container">
-          <iframe
-            src="https://drive.google.com/file/d/1UzEhDAg-vQGu1xPZoPfcIZkwyJPXmevC/preview"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <figure>
+          <video
+            controls
+            muted
+            src="/images/Connect 4 Console Demo.mp4"
+            width="100%"
+          >
+            Sorry, your browser doesn't support embedded videos, but don't
+            worry, you can{" "}
+            <a href="/images/Connect 4 Console Demo.mp4">download it</a>
+            and watch it with your favorite video player!
+          </video>
+          <figcaption>
+            A demo of the purely text-based version of the game.
+          </figcaption>
+        </figure>
 
         <h4>Graphical Version</h4>
 
-        <div className="embed-container">
-          <iframe
-            src="https://drive.google.com/file/d/1u7JwOV2L7p4HMb2SYuxY6GwSpbQaOtDu/preview"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </div>
+        <figure>
+          <video
+            controls
+            muted
+            src="/images/Connect 4 Graphical Demo.mp4"
+            width="100%"
+          >
+            Sorry, your browser doesn't support embedded videos, but don't
+            worry, you can{" "}
+            <a href="/images/Connect 4 Graphical Demo.mp4">download it</a>
+            and watch it with your favorite video player!
+          </video>
+          <figcaption>A demo of the graphical version of the game.</figcaption>
+        </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
         <h4>Skills</h4>
@@ -79,9 +93,15 @@ export default function Connect4(props) {
         <li>Unit Testing</li>
 
         <h4>Technologies</h4>
-        <li>JavaFX</li>
-        <li>FXML</li>
-        <li>Gradle</li>
+        <li><a href="https://openjfx.io/">JavaFX</a></li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/FXML">FXML</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Gradle#:~:text=Gradle%20is%20a%20build%20automation%20tool&text=compilation%20and%20packaging%20to%20testing%2C%20deployment%2C%20and%20publishing">
+            Gradle
+          </a>
+        </li>
         <li>Git</li>
         <li>IntelliJ IDEA</li>
       </SkillsNTechnologies>
