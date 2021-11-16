@@ -25,15 +25,16 @@ export default function ChallengerPrototype(props) {
           be interactive was crucial to convey how the actual app would work
           before it was ever built. The audience for this artifact was not an
           end user, but a project manager. Their <strong>time is scarce</strong>
-          . This artifact kept that in mind and addressed it by coalescing the
+          . This artifact kept that in mind and addressed it by distilling the
           essence of the interactions into something they could{" "}
           <strong>feel and use</strong>, not just read about.{" "}
         </p>
         <p>
           The prototype came in the form of a PDF, so there was no overhead to
-          install or use it. The interactions were created by linked buttons or
-          text that would simply transport the viewer to another page of the
-          prototype. Go ahead, <strong>give it a try</strong>!
+          install or use it. The interactions are simulated with linked areas
+          (shown here in light red for clarity) that simply transport the viewer
+          to another page of the prototype. Go ahead,{" "}
+          <strong>give it a try</strong>!
         </p>
         <figure>
           <iframe
