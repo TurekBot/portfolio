@@ -13,13 +13,13 @@ export default function MrPoorCollegeStudent(props) {
         previousArtifactLink={props.previousArtifactLink}
       >
         <p>
-          Personas shine when they’re just true enough—I know this one is true
+          Personas shine when they’re <strong>just true enough</strong>—I know this one is true
           enough because I put a part of my poor college self in it.{" "}
         </p>
         <p>
-          Cereal isn’t that bad with water instead of milk. I know, because the
+          Cereal isn’t <em>that</em> bad with water instead of milk. I know, because the
           quote, “I don’t want anyone to know, but sometimes, when I’m out of
-          milk, I put water in my cereal,” is based on my own life experience as
+          milk, I put water in my cereal,” is based on <strong>my own life</strong> experience as
           a poor college student.{" "}
         </p>
         <p>
