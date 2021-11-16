@@ -37,11 +37,11 @@ export default function AboutMe() {
         </figure>
       </section>
       <section>
-        <h1>Hi, the name's Brad.</h1>
+        <h1>Howdy.</h1>
         <p>I'm a lot of things. But, above all, I'm a husband and father.</p>
         <p>
-          In my career, I want to champion and create not just software, but
-          software that <em>works</em>—like really well.
+          In my career, I want to champion and create software that{" "}
+          <em>works</em>—like really well. It's all about reducing the friction between users and their tools.
         </p>
         <h3>Free time</h3>
         <p>
@@ -49,29 +49,12 @@ export default function AboutMe() {
           and exciting places.
         </p>
         <p>
-          I enjoy the occasional TikTok or YouTube video. Some of my favorites
-          lately are
-          <ul>
-            <li>
-              Lubalin's{" "}
-              <a href={lubalin}>turning of internet drama into songs</a>,
-            </li>
-            <li>
-              the <a href={stuffMadeHere}>superhuman gadgetry</a> by Stuff Made
-              Here, and
-            </li>
-            <li>
-              some supremely{" "}
-              <a href={myMechanics}>satisfying tool restorations</a> by a very
-              talented Swiss man.
-            </li>
-          </ul>
+          I enjoy the occasional TikTok or YouTube video.  
         </p>
         <h3>Leave it better than you found it.</h3>
         <p>
-          It's the motto I can't seem to stop living by. 😅 I find a typo, I let
-          somebody know. I see some litter, I pick it up. I think of a better
-          way, I pitch it.
+          It's sort of my motto. I spy a typo, I fix it. I think of a better
+          way, I pitch it. I see some litter, I pick it up. 
         </p>
         <p>
           It's the right thing to do, I figure. We're all in this together,
