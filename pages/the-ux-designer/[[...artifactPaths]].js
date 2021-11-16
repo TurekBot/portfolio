@@ -76,7 +76,7 @@ export default function TheUxDesigner() {
           id={usableFormsId}
           thumbnail="/images/usability-test-forms.gif"
           artifactTitle="Usable Usability Test Forms"
-          hook={<span>Very meta.</span>}
+          hook={<span>You've got to practice what you preach.</span>}
         />
       </RolePage>
     </>

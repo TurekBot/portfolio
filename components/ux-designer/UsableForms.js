@@ -49,8 +49,8 @@ export default function UsableForms(props) {
         </ul>
         <p>
           Creating fillable PDFs was not something I had done before, but I
-          adapted and quickly got in and figured out how to do it. This is a
-          technique I&rsquo;d definitely consider in the future.
+          adapted and quickly got in and figured out how to do it. I'll
+          definitely be using similar forms in the future.
         </p>
         <figure>
           <iframe
@@ -60,7 +60,7 @@ export default function UsableForms(props) {
             src={preTestQuestions}
           />
           <figcaption>
-            Demographic questions we administered before the usability test.{" "}
+            Demographic questions we administered <em>before</em> the usability test.{" "}
             <a href={preTestQuestions} target="_blank" class="fullscreen">
               Fullscreen
             </a>{" "}
@@ -75,7 +75,7 @@ export default function UsableForms(props) {
             src={postTestQuestions}
           />
           <figcaption>
-            Questions we administered after the usability test, asking about
+            Questions we administered <em>after</em> the usability test, asking about
             their experience.{" "}
             <a href={postTestQuestions} target="_blank" class="fullscreen">
               Fullscreen
@@ -103,7 +103,6 @@ export default function UsableForms(props) {
         <h4>Technologies</h4>
         <li>Adobe Acrobat Pro</li>
         <li>Word</li>
-
       </SkillsNTechnologies>
     </>
   );
