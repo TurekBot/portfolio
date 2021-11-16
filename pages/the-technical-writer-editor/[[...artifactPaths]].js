@@ -6,6 +6,7 @@ import CsHandouts from "../../components/technical-writer-editor/CsHandouts";
 import EditingTeamSport from "../../components/technical-writer-editor/EditingTeamSport";
 import CaseOfTheClipboard from "../../components/technical-writer-editor/CaseOfTheClipboard";
 import PlasmaPosterReDo from "../../components/technical-writer-editor/PlasmaPosterReDo";
+import VendorIssuesGuides from "../../components/technical-writer-editor/VendorIssuesGuides";
 
 export default function TheTechnicalWriterEditor() {
   const roleName = "Technical Writer & Editor";
@@ -15,6 +16,7 @@ export default function TheTechnicalWriterEditor() {
   const editingTeamSportId = "editing-team-sport";
   const caseOfTheClipboardId = "case-of-the-clipboard";
   const plasmaPosterId = "plasma-poster-re-do";
+  const userGuideId = "vendor-issues-user-guide";
 
   const artifacts = new Array(
     <SquareKnot id={squareKnotId} />,
@@ -22,6 +24,7 @@ export default function TheTechnicalWriterEditor() {
     <EditingTeamSport id={editingTeamSportId} />,
     <CaseOfTheClipboard id={caseOfTheClipboardId} />,
     <PlasmaPosterReDo id={plasmaPosterId} />,
+    <VendorIssuesGuides id={userGuideId} />,
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -91,6 +94,17 @@ export default function TheTechnicalWriterEditor() {
           hook={
             <span>
               People don't read things; they scan things.
+            </span>
+          }
+        />
+        <ArtifactCard
+          parent={roleName}
+          id={userGuideId}
+          thumbnail="http://vendor-issues.surge.sh/docs/assets/undraw_co-working.svg"
+          artifactTitle="Vendor Issues User Guide"
+          hook={
+            <span>
+              The best documentation answers questions quickly.
             </span>
           }
         />
