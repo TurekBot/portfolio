@@ -19,14 +19,15 @@ export default function ThisWebsite(props) {
           own. I've learned this first hand on other projects.)
         </p>
         <p>
-          Having recently taken a class on semantic web design, I wanted to <b>give</b>{" "}
-          my new-found skills a <b>try</b> on a full-blown website. After all, what
-          better way to demonstrate my abilities than to <em>show</em> not tell.
+          Having recently taken a class on semantic web design, I wanted to{" "}
+          <b>give</b> my new-found skills a <b>try</b> on a full-blown website.
+          After all, what better way to demonstrate my abilities than to{" "}
+          <em>show</em> not tell.
         </p>
         <p>
-          This portfolio has been an <b>immense</b> amount of work, but it's been
-          oh-so-satisfying to compile all of the <b>hard work</b> I've put into my
-          degree over the last few years.
+          This portfolio has been an <b>immense</b> amount of work, but it's
+          been oh-so-satisfying to compile all of the <b>hard work</b> I've put
+          into my degree over the last few years.
         </p>
         <p>
           Yet, there are still flaws. Despite the 100s of hours I've put into
@@ -38,35 +39,57 @@ export default function ThisWebsite(props) {
           As it turns out, doing something well is <em>really hard</em>.
         </p>
         <p>
-          But, I'm glad I did it. <b>I learned</b> a lot. And that's all that matters:
-          that you do better next time.
+          But, I'm glad I did it. <b>I learned</b> a lot. And that's all that
+          matters: that you do better next time.
         </p>
         <h3>Strategies</h3>
         <p>
           These are the strategies I employed to keep myself out of trouble.
         </p>
+
         <h4>Reuse</h4>
         <p>
           Wherever I could, I created reusable components and styles. This was
           crucial because of the ever-changing nature of software. Having a
-          single source of truth for every component allowed me to make a <b>change</b>{" "}
-          in one place and have it <b>propagate</b> throughout the website.
+          single source of truth for every component allowed me to make a{" "}
+          <b>change</b> in one place and have it <b>propagate</b> throughout the
+          website.
         </p>
-        <p>
-          One prime example of this kind of reuse was the{" "}
-          <code>&lt;ArtifactCard/&gt;</code> component I created. It defined the
-          basic structure of every card demonstrating a piece of work.
-        </p>
-          <ArtifactCardUse/>
+        <details>
+          <summary>more...</summary>
+          <p>
+            One prime example of this kind of reuse was the{" "}
+            <code>&lt;ArtifactCard/&gt;</code> component I created. It defined
+            the basic structure of every card demonstrating a piece of work.
+          </p>
+          <ArtifactCardUse />
 
+          <p>
+            Late into development, I realized that it would be better to{" "}
+            <b>have a</b> "See more..." <b>button</b> instead of just wrapping
+            the whole card in a link. Because I was reusing{" "}
+            <code>&lt;ArtifactCard/&gt;</code> for each one, I only had to make
+            a single change and each card got a button.
+          </p>
+          <ArtifactCardListing />
+        </details>
+
+        <h4>Complexity Management</h4>
         <p>
-          Late into development, I realized that it would be better to have a
-          "See more..." button instead of just wrapping the whole card in a
-          link. Because I was reusing <code>&lt;ArtifactCard/&gt;</code> for
-          each one, I only had to make a single change and each card got a
-          button.
+          When creating anything technical, it's important to remember that
+          humans struggle with complexity. The solution? Break it down into{" "}
+          <b>chunks</b>.
         </p>
-        <ArtifactCardListing />
+        <p>
+          One way I did that was by separating what <em>had</em> changed from
+          what <em>hadn't</em>. If something broke unexpectedly, I could{" "}
+          <b>narrow it down</b> to only the changed parts.
+        </p>
+        <p>
+          <b>Git</b> was the wizardry that let me helped me save my place chunk by
+          chunk as well as time travel back to what I had done previously, if I
+          needed to.
+        </p>
       </ArtifactStory>
       <SkillsNTechnologies>
         <h4>Skills</h4>
