@@ -122,9 +122,9 @@ nav>ul>li>a {
 }
 
 header {
-    padding: 0 1rem;
     background-color: var(--accent-color);
     width: 100%;
+    /* background-color: lightsteelblue; */
 }
 
 .intro {
@@ -166,19 +166,37 @@ code {
 
 section#roleCards {
     display: grid;
-    gap: 2em;
-    grid-template-columns: 2fr 2fr;
+    gap: 3vh;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     margin-top: 1em;
+    margin-bottom: 10vh;
+    height: 70vh;
+
+    /* background-color: lightsalmon; */
 }
 
 .roleCard {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Roboto Slab', serif;
     border-radius: 4%;
     padding: 1em;
     transition: background-color .2s;
+    height: 100%;
+
+    /* background-color: lightgreen; */
+}
+
+.roleCard > div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    height: 80%;
+
+    /* background-color: lightgoldenrodyellow; */
 }
 
 .roleCard:active {
@@ -186,12 +204,14 @@ section#roleCards {
 }
 
 svg.avatar {
-    width: 7em;
+    height: 100%;
     fill: var(--accent-color);
 }
 
 svg.role-icon {
-    width: 4em;
+    height: 40%;
+
+    /* background-color: lightslategrey */
 }
 
 /*
