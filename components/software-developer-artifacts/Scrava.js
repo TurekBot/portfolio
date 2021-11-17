@@ -61,6 +61,10 @@ export default function Scrava(props) {
           the final month of the competition and we all had a <b>great time</b> at the
           relay.
         </p>
+        <figure>
+          <img src="/images/kathryns-bathryns.jpg" />
+          <figcaption>Our team of eight at one of the transitions during the bike relay.</figcaption>
+        </figure>
       </ArtifactStory>
       <SkillsNTechnologies>
         <h4>Skills</h4>
