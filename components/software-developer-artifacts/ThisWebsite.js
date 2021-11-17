@@ -19,26 +19,26 @@ export default function ThisWebsite(props) {
           own. I've learned this first hand on other projects.)
         </p>
         <p>
-          Having recently taken a class on semantic web design, I wanted to give
-          my new-found skills a try on a full-blown website. After all, what
+          Having recently taken a class on semantic web design, I wanted to <b>give</b>{" "}
+          my new-found skills a <b>try</b> on a full-blown website. After all, what
           better way to demonstrate my abilities than to <em>show</em> not tell.
         </p>
         <p>
-          This portfolio has been an immense amount of work, but it's been
-          oh-so-satisfying to compile all of the hard work I've put into my
+          This portfolio has been an <b>immense</b> amount of work, but it's been
+          oh-so-satisfying to compile all of the <b>hard work</b> I've put into my
           degree over the last few years.
         </p>
         <p>
-          Alas, there are flaws. Despite the 100s of hours I've put into
+          Yet, there are still flaws. Despite the 100s of hours I've put into
           compiling and creating this website, there are still mistakes—perhaps
           even in the very things I've said I'm good at.{" "}
         </p>
 
         <p>
-          As it turns out, doing something well is <em>really</em> hard.
+          As it turns out, doing something well is <em>really hard</em>.
         </p>
         <p>
-          But, I'm glad I did it. I learned a lot. And that's all that matters:
+          But, I'm glad I did it. <b>I learned</b> a lot. And that's all that matters:
           that you do better next time.
         </p>
         <h3>Strategies</h3>
@@ -49,8 +49,8 @@ export default function ThisWebsite(props) {
         <p>
           Wherever I could, I created reusable components and styles. This was
           crucial because of the ever-changing nature of software. Having a
-          single source of truth for every component allowed me to make a change
-          in one place and have it propagate throughout the website.
+          single source of truth for every component allowed me to make a <b>change</b>{" "}
+          in one place and have it <b>propagate</b> throughout the website.
         </p>
         <p>
           One prime example of this kind of reuse was the{" "}
