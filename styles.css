@@ -52,27 +52,35 @@ main {
 :root {
     --nav-width: 230px;
     /* Color Palette from Coolors.co: https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51 */
-    --charcoal: hsla(197, 37%, 24%, 1);
-    --viridian-green: hsla(180, 66%, 38%, 1);
-    --flame: hsla(16, 100%, 45%, 1);
-    --middle-yellow: hsla(55, 100%, 50%, 1);
-    --carnation-pink: hsla(336, 84%, 80%, 1)
+    --charcoal: hsla(198, 70%, 18%, 1);
+    --celadon-green: hsla(173, 80%, 30%, 1);
+    --selective-yellow: hsla(43, 87%, 50%, 1);
+    --safety-orange: hsla(27, 94%, 51%, 1);
+    --vermilion: hsla(12, 89%, 46%, 1);
+
+    /* CSS HSL */
+
+
+
+
+
+
 }
 
 .software-developer {
-    --accent-color: var(--viridian-green);
+    --accent-color: var(--celadon-green);
 }
 
 .visual-communicator {
-    --accent-color: var(--flame);
+    --accent-color: var(--selective-yellow);
 }
 
 .ux-designer {
-    --accent-color: var(--middle-yellow);
+    --accent-color: var(--safety-orange);
 }
 
 .technical-writer-editor {
-    --accent-color: var(--carnation-pink);
+    --accent-color: var(--vermilion);
 }
 
 ::selection {
