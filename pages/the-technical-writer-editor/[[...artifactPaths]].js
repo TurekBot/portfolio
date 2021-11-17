@@ -58,7 +58,7 @@ export default function TheTechnicalWriterEditor() {
         <ArtifactCard
           parent={roleName}
           id={squareKnotId}
-          thumbnail="/images/step-5.gif"
+          thumbnail="http://squareknot.surge.sh/How%20To%20Make%20a%20Square%20Knot_final_still.png"
           artifactTitle="How to Tie a Square Knot: an Animated Infographic"
           hook={
             <span>
