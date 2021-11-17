@@ -7,6 +7,7 @@ import Challenger from "../../components/software-developer-artifacts/Challeng.e
 import Connect4 from "../../components/software-developer-artifacts/Connect4";
 import Knuckles from "../../components/software-developer-artifacts/Knuckles";
 import ThisWebsite from "../../components/software-developer-artifacts/ThisWebsite";
+import Scrava from "../../components/software-developer-artifacts/Scrava";
 
 export default function TheSoftwareDeveloper() {
   const roleName = "Software Developer";
@@ -16,13 +17,15 @@ export default function TheSoftwareDeveloper() {
   const thisWebsiteId = "this-website";
   const challengerId = "challeng.er";
   const connect4Id = "connect-4";
+  const scravaId = "scrava";
 
   const artifacts = new Array(
     <Knuckles id={knucklesId} />,
     <AutoDash id={autoDashId} />,
     <ThisWebsite id={thisWebsiteId} />,
     <Challenger id={challengerId} />,
-    <Connect4 id={connect4Id} />
+    <Connect4 id={connect4Id} />,
+    <Scrava id={scravaId} />
   );
 
   generateNextAndPrevious(artifacts, roleName);
@@ -90,6 +93,17 @@ export default function TheSoftwareDeveloper() {
             <span>
               Plink, plink-plink. It’s Connect 4. Now appearing digitally—in
               both text-based and graphical flavors.
+            </span>
+          }
+        />
+        <ArtifactCard
+          parent={roleName}
+          id={scravaId}
+          thumbnail="/images/strava-fade-to-scrava.gif"
+          artifactTitle="Scrava"
+          hook={
+            <span>
+              It's a Scraper for Strava™—it's Scrava.
             </span>
           }
         />
