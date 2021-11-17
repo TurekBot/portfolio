@@ -52,36 +52,29 @@ main {
 :root {
     --nav-width: 230px;
     /* Color Palette from Coolors.co: https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51 */
-    --charcoal: hsla(198, 70%, 18%, 1);
-    --celadon-green: hsla(173, 80%, 30%, 1);
-    --selective-yellow: hsla(43, 87%, 50%, 1);
-    --safety-orange: hsla(27, 94%, 51%, 1);
-    --vermilion: hsla(12, 89%, 46%, 1);
-
-    /* CSS HSL */
-
-
-
-
-
-
+    --charcoal: hsla(197, 37%, 24%, 1);
+    --persian-green: hsla(173, 58%, 39%, 1);
+    --orange-yellow-crayola: hsla(43, 74%, 66%, 1);
+    --sandy-brown: hsla(27, 87%, 67%, 1);
+    --burnt-sienna: hsla(12, 76%, 61%, 1);
 }
 
 .software-developer {
-    --accent-color: var(--celadon-green);
+    --accent-color: var(--persian-green);
 }
 
 .visual-communicator {
-    --accent-color: var(--selective-yellow);
+    --accent-color: var(--orange-yellow-crayola);
 }
 
 .ux-designer {
-    --accent-color: var(--safety-orange);
+    --accent-color: var(--sandy-brown);
 }
 
 .technical-writer-editor {
-    --accent-color: var(--vermilion);
+    --accent-color: var(--burnt-sienna);
 }
+
 
 ::selection {
     background-color: var(--charcoal);
