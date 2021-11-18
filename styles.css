@@ -167,7 +167,7 @@ code {
 section#roleCards {
     display: grid;
     gap: 3vh;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     margin-top: 1em;
     margin-bottom: 10vh;
@@ -190,7 +190,7 @@ section#roleCards {
     /* background-color: lightgreen; */
 }
 
-.roleCard > div {
+.roleCard>div {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
@@ -222,15 +222,19 @@ svg.role-icon {
     0% {
         transform: scale(1, 1) translateY(0);
     }
+
     10% {
         transform: scale(1.1, .9) translateY(0);
     }
+
     30% {
         transform: scale(.9, 1.1) translateY(-25px);
     }
+
     50% {
         transform: scale(1, 1) translateY(0);
     }
+
     100% {
         transform: scale(1, 1) translateY(0);
     }
@@ -245,29 +249,42 @@ figure.artifact-card figcaption {
     color: black;
 }
 
-.artifact-cards {
+.artifact-cards-area {
     width: 100%;
-    display: grid;
-    gap: 2em 0.5em;
-    grid-template-columns: 2fr 2fr 2fr;
-    margin: 2em 0;
+    display: flex;
+    gap: 3vw 3vw;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
-.artifact-cards img {
-    width: 20vw;
-    height: 20vw;
+.artifact-card>a:first-of-type {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.artifact-card img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     object-position: center;
 }
 
 .artifact-card {
     padding: 0.25em;
-    width: 100%;
+    width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    margin: 0;
+}
+
+/*Most of the thumbnails are square and fit nicely, but this man is tall and so he needs a few boundaries.*/
+.this-website img {
+    height: 40%;
+    width: 50%;
 }
 
 .see-more-button {
@@ -333,7 +350,7 @@ figure.artifact-card figcaption {
 }
 
 .skills-n-technologies h4 {
-    margin-left: -1.51em ;
+    margin-left: -1.51em;
 }
 
 .skills-n-technologies ul {

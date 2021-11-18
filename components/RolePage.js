@@ -46,7 +46,7 @@ export default function RolePage(props) {
         </header>
         <section
           className={
-            selectedArtifact ? "artifact-description" : "artifact-cards"
+            selectedArtifact ? "artifact-description" : "artifact-cards-area"
           }
         >
           {selectedArtifact ? selectedArtifact : artifactCards}
