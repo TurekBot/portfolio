@@ -254,8 +254,8 @@ figure.artifact-card figcaption {
 }
 
 .artifact-cards img {
-    width: 275px;
-    height: 275px;
+    width: 20vw;
+    height: 20vw;
     object-fit: contain;
     object-position: center;
 }
