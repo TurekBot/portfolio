@@ -212,6 +212,7 @@ a {
 .artifact-description a:hover::before {
    transform: translateY(0);
    transition: transform .25s ease-out;
+   border-radius: 3px;
 }
 
 .title {
