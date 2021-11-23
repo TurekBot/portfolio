@@ -2,7 +2,7 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    font-size: large;
+    font-size: larger;
     line-height: 1.5em;
 }
 
@@ -313,6 +313,10 @@ figure.artifact-card figcaption {
 .artifact-description section {
     flex: 3;
     padding: 0 2em;
+}
+
+.artifact-story {
+   width: 35em;
 }
 
 .artifact-story img, .artifact-story iframe {
