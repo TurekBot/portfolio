@@ -129,6 +129,7 @@ nav li {
 nav>ul>li>a:hover {
     color: black;
     background-color: var(--accent-color, white);
+    filter: saturate(75%);
 }
 
 nav>ul>li>a {
