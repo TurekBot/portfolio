@@ -118,6 +118,13 @@ nav ul {
     list-style-type: none;
     padding-inline-start: 0px;
 }
+nav li:first-of-type {
+    border-top: 1px solid hsla(100, 100%, 100%, 0.075);
+}
+nav li {
+    border-bottom: 1px solid hsla(100, 100%, 100%, 0.075);
+
+}
 
 nav>ul>li>a:hover {
     color: black;
