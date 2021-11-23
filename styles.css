@@ -451,7 +451,11 @@ aside#dust>span {
 }
 
 figure {
+    display: flex;
+    /*Puts caption on top of image*/
+    flex-direction: column-reverse;
     margin: auto;
+    gap: 3px;
 }
 
 figcaption {
