@@ -8,7 +8,10 @@ export default function AboutMe() {
     <section id="about-me">
       <section>
         <figure>
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D10208374309346000%26set%3Da.1534144244220%26type%3D3&show_text=false&width=500" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <img
+            width="100%"
+            src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.18169-9/12742033_10208374309346000_5438003255211189640_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_ohc=cQVPGgOEa7wAX_VHVc-&_nc_ht=scontent-dfw5-1.xx&oh=7fc177deb6505f1bae4f30780c724c5c&oe=61B2B60A"
+          />
           <figcaption>
             My beautiful wife and I on a tandem bike in sunny St. George, UT.
           </figcaption>
