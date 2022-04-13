@@ -10,7 +10,7 @@ export default function AboutMe() {
         <figure>
           <img
             width="100%"
-            src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.18169-9/12742033_10208374309346000_5438003255211189640_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_ohc=cQVPGgOEa7wAX_VHVc-&_nc_ht=scontent-dfw5-1.xx&oh=7fc177deb6505f1bae4f30780c724c5c&oe=61B2B60A"
+            src="/tandem.jpg"
           />
           <figcaption>
             My beautiful wife and I on a tandem bike in sunny St. George, UT.
@@ -49,12 +49,12 @@ export default function AboutMe() {
           and exciting places.
         </p>
         <p>
-          I enjoy the occasional TikTok or YouTube video.  
+          I enjoy the occasional TikTok or YouTube video.
         </p>
         <h3>Leave it better than you found it.</h3>
         <p>
           It's sort of my motto. I spy a typo, I fix it. I think of a better
-          way, I pitch it. I see some litter, I pick it up. 
+          way, I pitch it. I see some litter, I pick it up.
         </p>
         <p>
           It's the right thing to do, I figure. We're all in this together,
